@@ -193,6 +193,510 @@ div.divider-global:nth-of-type(even) {
   </div>
 <div id="features" class="divider-global">
   <div class="container">
+    <h2>Version V6.94b (2021-01-26)</h2>
+    <div>
+      <h3>Configurator</h3>
+      <ol>
+        <li> Log: Linux: When selecting text, the selection would sometimes appear at the wrong position. Fixed. </li>
+        <li> Log: macOS: When selecting text, the selection would sometimes appear at the wrong position. Fixed. </li>
+        <li> Log: When selecting many characters (&gt; 512) in a single line, the application could crash. Fixed. </li>
+        <li> Log: Linux: Some characters were merged into ligatures (e.g. &quot;ff&quot;, &quot;fl&quot;, &quot;fi&quot;, ... turned into a single character). This could cause alignment issues. Fixed. </li>
+        <li> Log: Trying to select a word (double click) in the log after it has been cleared caused a seemingly random sequence of characters to be selected. Fixed. </li>
+        <li> Log: Linux: Switched default fixed-width font to &quot;DejaVu Sans Mono&quot;. </li>
+        <li> Log: When selecting text (over and over), the process would take up more and more RAM. Fixed. </li>
+        <li> Log: Holding down the mouse wheel selected text. Fixed. </li>
+        <li> Log: Double clicking the mouse wheel selected a word. Fixed. </li>
+      </ol>
+      <h3>DLL</h3>
+      <ol>
+        <li> Cypress PSoC6: Applied some minor bug fixes. </li>
+        <li> TI RM42L432: Size of OTP flash sector was incorrect (2 KB instead of 1 KB). Fixed. </li>
+        <li> Renesas RA6M4: QSPI flash programming did not work. Introduced in V6.92. Fixed. </li>
+        <li> QSPI Flash programming memory-mapped read mode for SiFive FE310 series device, fixed. </li>
+      </ol>
+      <h3>Flasher ARM V5</h3>
+      <ol>
+        <li> Stand-alone programming of SPI flashes did not abort when verifying the SPI Flash ID failed. Fixed. </li>
+      </ol>
+      <h3>Flasher PRO V4</h3>
+      <ol>
+        <li> Universal Flashloader: Programming of Microchip PIC18 series devices could fail since last update. Fixed. </li>
+      </ol>
+      <h3>Flasher PRO V5</h3>
+      <ol>
+        <li> Stand-alone programming of SPI flashes did not abort when verifying the SPI Flash ID failed. Fixed. </li>
+        <li> UART programming (e.g. RL78 targets) did not work correctly. Fixed. </li>
+        <li> Added support for different transfer mode configurations when using quad mode. </li>
+      </ol>
+      <h3>Flasher PRO-2GB V5</h3>
+      <ol>
+        <li> Added support for different transfer mode configurations when using quad mode. </li>
+      </ol>
+      <h3>GDB Server GUI</h3>
+      <ol>
+        <li> Log: Linux: When selecting text, the selection would sometimes appear at the wrong position. Fixed. </li>
+        <li> Log: macOS: When selecting text, the selection would sometimes appear at the wrong position. Fixed. </li>
+        <li> Log: When selecting many characters (&gt; 512) in a single line, the application could crash. Fixed. </li>
+        <li> Log: Linux: Some characters were merged into ligatures (e.g. &quot;ff&quot;, &quot;fl&quot;, &quot;fi&quot;, ... turned into a single character). This could cause alignment issues. Fixed. </li>
+        <li> Log: Trying to select a word (double click) in the log after it has been cleared caused a seemingly random sequence of characters to be selected. Fixed. </li>
+        <li> Log: Linux: Switched default fixed-width font to &quot;DejaVu Sans Mono&quot;. </li>
+        <li> Log: When selecting text (over and over), the process would take up more and more RAM. Fixed. </li>
+        <li> Log: Holding down the mouse wheel selected text. Fixed. </li>
+        <li> Log: Double clicking the mouse wheel selected a word. Fixed. </li>
+      </ol>
+      <h3>J-Flash</h3>
+      <ol>
+        <li> Improved error message if data did not fit into selected sectors. </li>
+        <li> When trying to download config + data file to a Flasher ATE with a project which does not specify the desired modules, a message box appeared with the same message three times. Fixed. </li>
+        <li> macOS: On systems running macOS Big Sur, variable-width fonts were used instead of fixed-width fonts, causing data windows to look broken. Fixed. </li>
+        <li> Log: Linux: When selecting text, the selection would sometimes appear at the wrong position. Fixed. </li>
+        <li> Log: macOS: When selecting text, the selection would sometimes appear at the wrong position. Fixed. </li>
+        <li> Log: When selecting many characters (&gt; 512) in a single line, the application could crash. Fixed. </li>
+        <li> Log: Linux: Some characters were merged into ligatures (e.g. &quot;ff&quot;, &quot;fl&quot;, &quot;fi&quot;, ... turned into a single character). This could cause alignment issues. Fixed. </li>
+        <li> Log: Trying to select a word (double click) in the log after it has been cleared caused a seemingly random sequence of characters to be selected. Fixed. </li>
+        <li> Log: Linux: Switched default fixed-width font to &quot;DejaVu Sans Mono&quot;. </li>
+        <li> Log: When selecting text (over and over), the process would take up more and more RAM. Fixed. </li>
+        <li> Log: Holding down the mouse wheel selected text. Fixed. </li>
+        <li> Log: Double clicking the mouse wheel selected a word. Fixed. </li>
+      </ol>
+      <h3>J-Flash Lite</h3>
+      <ol>
+        <li> Some log messages were printed without line breaks inbetween. Fixed. </li>
+        <li> Log: Linux: When selecting text, the selection would sometimes appear at the wrong position. Fixed. </li>
+        <li> Log: macOS: When selecting text, the selection would sometimes appear at the wrong position. Fixed. </li>
+        <li> Log: When selecting many characters (&gt; 512) in a single line, the application could crash. Fixed. </li>
+        <li> Log: Linux: Some characters were merged into ligatures (e.g. &quot;ff&quot;, &quot;fl&quot;, &quot;fi&quot;, ... turned into a single character). This could cause alignment issues. Fixed. </li>
+        <li> Log: Trying to select a word (double click) in the log after it has been cleared caused a seemingly random sequence of characters to be selected. Fixed. </li>
+        <li> Log: Linux: Switched default fixed-width font to &quot;DejaVu Sans Mono&quot;. </li>
+        <li> Log: When selecting text (over and over), the process would take up more and more RAM. Fixed. </li>
+        <li> Log: Holding down the mouse wheel selected text. Fixed. </li>
+        <li> Log: Double clicking the mouse wheel selected a word. Fixed. </li>
+      </ol>
+      <h3>J-Flash SPI</h3>
+      <ol>
+        <li> macOS: Trying to program an SPI flash could crash J-Flash SPI. Fixed. </li>
+        <li> macOS: Trying to execute &quot;Erase Chip&quot; could fail when &quot;Auto detect flash&quot; was selected in the project settings. Fixed. </li>
+        <li> macOS: On systems running macOS Big Sur, variable-width fonts were used instead of fixed-width fonts, causing data windows to look broken. Fixed. </li>
+        <li> Log: Linux: When selecting text, the selection would sometimes appear at the wrong position. Fixed. </li>
+        <li> Log: macOS: When selecting text, the selection would sometimes appear at the wrong position. Fixed. </li>
+        <li> Log: When selecting many characters (&gt; 512) in a single line, the application could crash. Fixed. </li>
+        <li> Log: Linux: Some characters were merged into ligatures (e.g. &quot;ff&quot;, &quot;fl&quot;, &quot;fi&quot;, ... turned into a single character). This could cause alignment issues. Fixed. </li>
+        <li> Log: Trying to select a word (double click) in the log after it has been cleared caused a seemingly random sequence of characters to be selected. Fixed. </li>
+        <li> Log: Linux: Switched default fixed-width font to &quot;DejaVu Sans Mono&quot;. </li>
+        <li> Log: When selecting text (over and over), the process would take up more and more RAM. Fixed. </li>
+        <li> Log: Holding down the mouse wheel selected text. Fixed. </li>
+        <li> Log: Double clicking the mouse wheel selected a word. Fixed. </li>
+        <li> When using different Flash settings than determined by J-Flash SPI&apos;s auto-detection, the settings were replaced with those determined by J-Flash SPI. Fixed. </li>
+      </ol>
+      <h3>J-Link-OB-K22-SiFive</h3>
+      <ol>
+        <li> Controlling RTS / CTS lines of virtual COM port did not work properly which could cause ESP32 firmware updates to fail. Fixed. </li>
+      </ol>
+      <h3>J-Mem</h3>
+      <ol>
+        <li> macOS: On systems running macOS Big Sur, variable-width fonts were used instead of fixed-width fonts, causing the data window to look broken. Fixed. </li>
+      </ol>
+      <h3>RTT Viewer</h3>
+      <ol>
+        <li> macOS: On systems running macOS Big Sur, variable-width fonts were used instead of fixed-width fonts. Fixed. </li>
+        <li> Linux: When selecting text, the selection would sometimes appear at the wrong position. Fixed. </li>
+        <li> macOS: When selecting text, the selection would sometimes appear at the wrong position. Fixed. </li>
+        <li> When selecting many characters (&gt; 512) in a single line, the application could crash. Fixed. </li>
+        <li> Linux: Some characters were merged into ligatures (e.g. &quot;ff&quot;, &quot;fl&quot;, &quot;fi&quot;, ... turned into a single character). This could cause alignment issues. Fixed. </li>
+        <li> Trying to select a word (double click) in a terminal after it has been cleared caused a seemingly random sequence of characters to be selected. Fixed. </li>
+        <li> Linux: Switched default fixed-width font to &quot;DejaVu Sans Mono&quot;. </li>
+        <li> When selecting text (over and over), the process would take up more and more RAM. Fixed. </li>
+        <li> Holding down the mouse wheel selected text. Fixed. </li>
+        <li> Double clicking the mouse wheel selected a word. Fixed. </li>
+      </ol>
+      <h3>Remote Server GUI</h3>
+      <ol>
+        <li> Log: Linux: When selecting text, the selection would sometimes appear at the wrong position. Fixed. </li>
+        <li> Log: macOS: When selecting text, the selection would sometimes appear at the wrong position. Fixed. </li>
+        <li> Log: When selecting many characters (&gt; 512) in a single line, the application could crash. Fixed. </li>
+        <li> Log: Linux: Some characters were merged into ligatures (e.g. &quot;ff&quot;, &quot;fl&quot;, &quot;fi&quot;, ... turned into a single character). This could cause alignment issues. Fixed. </li>
+        <li> Log: Trying to select a word (double click) in the log after it has been cleared caused a seemingly random sequence of characters to be selected. Fixed. </li>
+        <li> Log: Linux: Switched default fixed-width font to &quot;DejaVu Sans Mono&quot;. </li>
+        <li> Log: When selecting text (over and over), the process would take up more and more RAM. Fixed. </li>
+        <li> Log: Holding down the mouse wheel selected text. Fixed. </li>
+        <li> Log: Double clicking the mouse wheel selected a word. Fixed. </li>
+      </ol>
+      <h3>SDK</h3>
+      <ol>
+        <li> CSharp Samples: JLink_Start_CSharp project: The project did not build. Fixed. </li>
+      </ol>
+      <h3>SWOViewer GUI</h3>
+      <ol>
+        <li> Log: Linux: When selecting text, the selection would sometimes appear at the wrong position. Fixed. </li>
+        <li> Log: macOS: When selecting text, the selection would sometimes appear at the wrong position. Fixed. </li>
+        <li> Log: When selecting many characters (&gt; 512) in a single line, the application could crash. Fixed. </li>
+        <li> Log: Linux: Some characters were merged into ligatures (e.g. &quot;ff&quot;, &quot;fl&quot;, &quot;fi&quot;, ... turned into a single character). This could cause alignment issues. Fixed. </li>
+        <li> Log: Trying to select a word (double click) in the log after it has been cleared caused a seemingly random sequence of characters to be selected. Fixed. </li>
+        <li> Log: Linux: Switched default fixed-width font to &quot;DejaVu Sans Mono&quot;. </li>
+        <li> Log: When selecting text (over and over), the process would take up more and more RAM. Fixed. </li>
+        <li> Log: Holding down the mouse wheel selected text. Fixed. </li>
+        <li> Log: Double clicking the mouse wheel selected a word. Fixed.   </li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div id="features" class="divider-global">
+  <div class="container">
+    <h2>Version V6.94a (2021-01-14)</h2>
+    <div>
+      <h3>Commander</h3>
+      <ol>
+        <li> &apos;setbp&apos; displayed handle always 0. Fixed. </li>
+        <li> Added alias &apos;quit&apos; for &apos;q&apos; </li>
+        <li> Added alias &apos;write1&apos; for &apos;w1&apos; </li>
+        <li> Added alias &apos;write2&apos; for &apos;w2&apos; </li>
+        <li> Added alias &apos;write4&apos; for &apos;w4&apos; </li>
+        <li> Added alias &apos;clearbp&apos; for &apos;clrbp&apos; </li>
+      </ol>
+      <h3>Configurator</h3>
+      <ol>
+        <li> Removed &quot;Reset config&quot; option from context menu. </li>
+      </ol>
+      <h3>DLL</h3>
+      <ol>
+        <li> macOS Apple M1: Some calculations of time were incorrect (e.g. Flash programming speed calculation). Fixed. </li>
+        <li> macOS: Some dialogs changed their font after being clicked. Fixed. </li>
+        <li> RISC-V: Debugging cores that are based on the V0.11 debug spec. failed with error &quot;The connected J-Link does not support selecting another hart/core than 0 for RISC-V&quot; even if hart 0 was debugged. Fixed. </li>
+        <li> Renesas R7S721000 could not be selected. Fixed. </li>
+      </ol>
+      <h3>RTT</h3>
+      <ol>
+        <li> Sometimes, when doing a source-level step over a printf(), SEGGER_RTT_Write(), ... in the debugger, the RTT was not available in the RTT window after the step but only at the next continue/step/.... Fixed. </li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div id="features" class="divider-global">
+  <div class="container">
+    <h2>Version V6.94 (2021-01-08)</h2>
+    <div>
+      <h3>DLL</h3>
+      <ol>
+        <li> Xilinx UltraScale+ series (XCZUxxx devices): Connecting to Cortex-R5 core could fail on first try. Fixed. </li>
+        <li> Renesas RA6M4 devices: Added native ETB support. </li>
+        <li> Silicon Labs EFM32GG (series 0): User Data Page and Lockbits Page size was incorrect (4 KB while it&apos;s actually 2 KB). Fixed. </li>
+        <li> NXP i.MXRT101x QSPI: Flash-breakpoints did not work correctly under certain conditions. Fixed. </li>
+        <li> Added debug support for some new Toshiba TMPM4K devices (e.g. TMPM4KLFWAFG). </li>
+        <li> Added flash programming support for some new Toshiba TMPM4K devices (e.g. TMPM4KLFWAFG). </li>
+        <li> Added debug  support for Toshiba TMPM4M series (e.g. TMPM4MLFWAFG). </li>
+        <li> Added flash programming support for Toshiba TMPM4M series (e.g. TMPM4MLFWAFG). </li>
+        <li> NXP i.MXRT102x QSPI: Flash-breakpoints did not work correctly under certain conditions. Fixed. </li>
+        <li> SiFive Nexus trace: Jumplocation of direct conditional branches was calculated incorrectly under certain circumstances. Fixed. </li>
+        <li> Holtek HT32F125x: Flash-programming did not work correctly under some circumstances. Fixed. </li>
+        <li> Added support for some new ST STM32H750 devices (STM32H753AI and STM32H750ZB). </li>
+        <li> Added flash programming support for some Microchip PIC32MZ DAK/DAL/DAR/DAS devices. </li>
+        <li> Added aliases for NXP MKM14Z64xxx5, MKM14Z128xxx5, MKM33Z64xxx5, MKM33Z128xxx5, MKM34Z128xxx5 and MKM34Z256xxx5 series devices. </li>
+        <li> MindMotion MM32xx series: Flash-programming did not work correctly under some circumstances. Fixed. </li>
+        <li> Added debug support for ABOV A34M41x series devices. </li>
+        <li> Added flash programming support for ABOV A34M41x series devices. </li>
+        <li> Added J-Link support (debug + flash programming) for ST STM32G0B1xC/xE devices. </li>
+        <li> Added J-Link support (debug + flash programming) for ST STM32G0C1xC/xE devices. </li>
+      </ol>
+      <h3>DLL Updater</h3>
+      <ol>
+        <li> Added support for IAR EW 64bit version. </li>
+      </ol>
+      <h3>Flasher ARM V4</h3>
+      <ol>
+        <li> J-Flash SPI: Under very special circumstances, USB communication on Program operation could hang. Fixed. </li>
+      </ol>
+      <h3>Flasher ARM V5</h3>
+      <ol>
+        <li> J-Flash SPI: Under very special circumstances, USB communication on Program operation could hang. Fixed. </li>
+        <li> Direct SPI flash programming (config downloaded via J-Flash SPI) did not work in stand-alone mode. Fixed. </li>
+      </ol>
+      <h3>Flasher PRO V4</h3>
+      <ol>
+        <li> J-Flash SPI: Under very special circumstances, USB communication on Program operation could hang. Fixed. </li>
+      </ol>
+      <h3>Flasher PRO V5</h3>
+      <ol>
+        <li> J-Flash SPI: Under very special circumstances, USB communication on Program operation could hang. Fixed. </li>
+      </ol>
+      <h3>Flasher PRO-2GB V5</h3>
+      <ol>
+        <li> J-Flash SPI: Under very special circumstances, USB communication on Program operation could hang. Fixed. </li>
+      </ol>
+      <h3>J-Flash</h3>
+      <ol>
+        <li> Improved log messages in case downloading files failed. </li>
+        <li> Linux: PCode files failed to download when trying to download .cfg and .dat file to Flasher. Fixed. </li>
+        <li> macOS: PCode files failed to download when trying to download .cfg and .dat file to Flasher. Fixed. </li>
+        <li> Improved speed calculation for &quot;Target -&gt; Test -&gt; Test speed...&quot;. </li>
+      </ol>
+      <h3>J-Flash SPI</h3>
+      <ol>
+        <li> When downloading a configuration to a Flasher that does not support stand-alone SPI programming, there was no error message. Fixed. </li>
+      </ol>
+      <h3>J-Link EDU Mini V1</h3>
+      <ol>
+        <li> J-Flash SPI: Under very special circumstances, USB communication on Program operation could hang. Fixed. </li>
+      </ol>
+      <h3>J-Link EDU/BASE/PLUS V10</h3>
+      <ol>
+        <li> J-Flash SPI: Under very special circumstances, USB communication on Program operation could hang. Fixed. </li>
+      </ol>
+      <h3>J-Link EDU/BASE/PLUS V11</h3>
+      <ol>
+        <li> J-Flash SPI: Under very special circumstances, USB communication on Program operation could hang. Fixed. </li>
+      </ol>
+      <h3>J-Link PRO V4</h3>
+      <ol>
+        <li> J-Flash SPI: Under very special circumstances, USB communication on Program operation could hang. Fixed. </li>
+      </ol>
+      <h3>J-Link ULTRA+ V4</h3>
+      <ol>
+        <li> J-Flash SPI: Under very special circumstances, USB communication on Program operation could hang. Fixed. </li>
+      </ol>
+      <h3>J-Link WiFi V1</h3>
+      <ol>
+        <li> J-Flash SPI: Under very special circumstances, USB communication on Program operation could hang. Fixed. </li>
+      </ol>
+      <h3>J-Trace PRO V2 Cortex</h3>
+      <ol>
+        <li> J-Flash SPI: Under very special circumstances, USB communication on Program operation could hang. Fixed. </li>
+      </ol>
+      <h3>J-Trace PRO V2 CortexM</h3>
+      <ol>
+        <li> J-Flash SPI: Under very special circumstances, USB communication on Program operation could hang. Fixed. </li>
+      </ol>
+      <h3>SDK</h3>
+      <ol>
+        <li> Python SDK: Connect(): When passing JTAG as connection type, the speed parameter was ignored. Fixed. </li>
+        <li> Python SDK: RTTSample.py and StartupSequence.py: User TIF selection was ignored. Fixed. </li>
+        <li> Added flag for JLINK_GoEx(): JLINKARM_GO_FLAG_DISABLE_INT to disable interrupts for that call of GoEx(). </li>
+        <li> Visual Studio C-samples: Not all samples could be build due to a linking error. Fixed. </li>
+        <li> Extended JLINK_RTTERMINAL_STATUS by &lt;OverflowMask&gt; to allow getting information about which RTT up buffer on the host side overflowed because the application did not empty it fast enough. </li>
+        <li> Added documentation of JLINK_RTTERMINAL_Control() command &quot;RTTERMINAL_CMD_GETSTAT&quot;. </li>
+        <li> Python SDK: Added &quot;RTTERMINAL_CMD_GETSTAT&quot; command and &quot;RTTERMINAL_GetStat()&quot; function. </li>
+        <li> JLINK_RTTERMINAL_Command(): In case the passed command does not exist JLINK_ERR_DEVICE_FEATURE_NOT_SUPPORTED is now returned instead of -1. </li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div id="features" class="divider-global">
+  <div class="container">
+    <h2>Version V6.92 (2020-12-18)</h2>
+    <div>
+      <h3>Commander</h3>
+      <ol>
+        <li> ARMv8M (Cortex-M23 and Cortex-M33): Security extension registers were displayed incorrectly. Fixed. </li>
+      </ol>
+      <h3>Control Panel</h3>
+      <ol>
+        <li> CPU register tab: 64-bit registers (e.g. ARM NEON D16-D31) were not handled correctly (only 32-bit were shown, valid state was not updated correctly). Fixed. </li>
+      </ol>
+      <h3>Control panel</h3>
+      <ol>
+        <li> Flash download during debug: Added possibility to select chip erase instead of sector erase, to speed up erase process for some devices. </li>
+      </ol>
+      <h3>DLL</h3>
+      <ol>
+        <li> RISC-V: Andestech N22 (RV32 core) was missing in the list of supported devices/cores. Fixed. </li>
+        <li> Renesas RA6M4: Added link to reference wiki article to supported devices table on website. https://wiki.segger.com/J-Link_Renesas_RA6M4 </li>
+        <li> Improved QSPI programming speed for iMXRT5xx series device. </li>
+        <li> Added QSPI flash programming support for STM32H74x and STM32H75x series devices. </li>
+        <li> Device selection dialog could cause crash when hitting &apos;x&apos; instead of cancel button. Fixed. </li>
+      </ol>
+      <h3>DLL Updater</h3>
+      <ol>
+        <li> MPLAB X: MPLAB X V4.45 onwards could not be detected anymore, because the registry path was changed by Microchip. Fixed. </li>
+      </ol>
+      <h3>GDB Server</h3>
+      <ol>
+        <li> Cortex-M: PRIMASK and FAULTMASK register returned incorrect values. Fixed. </li>
+        <li> Cortex-M: Writing PRIMASK and FAULTMASK did not work properly. Fixed. </li>
+        <li> ARMv8M (Cortex-M23 and Cortex-M33): Security extension registers were displayed incorrectly. Fixed.  </li>
+        <li> Extended monitor regs command to also display the security extension register for ARMv8M based MCUs. </li>
+      </ol>
+      <h3>J-Link package</h3>
+      <ol>
+        <li> Linux ARM: Added GUI applications (J-Flash, J-Flash Lite, ...) </li>
+        <li> Linux ARM 32-bit: Removed GLibc 2.28 dependency from SEGGER executables and libraries as these potentially cause problems on older Raspberry Pis. </li>
+      </ol>
+      <h3>J-Trace PRO V2 Cortex</h3>
+      <ol>
+        <li> If no target was connected, J-Trace reported 0.0xxV for VTref instead of 0V. Fixed. </li>
+        <li> HSS: Added support for higher sampling frequencies (same frequencies as J-Link PRO V5 supports) </li>
+      </ol>
+      <h3>J-Trace PRO V2 CortexM</h3>
+      <ol>
+        <li> If no target was connected, J-Trace reported 0.0xxV for VTref instead of 0V. Fixed. </li>
+        <li> HSS: Added support for higher sampling frequencies (same frequencies as J-Link PRO V5 supports) </li>
+      </ol>
+      <h3>SDK</h3>
+      <ol>
+        <li> Python SDK: Added Python API function &quot;Exec()&quot; (equivalent to JLINKARM_Exec()). </li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div id="features" class="divider-global">
+  <div class="container">
+    <h2>Version V6.90a (2020-12-14)</h2>
+    <div>
+      <h3>DLL</h3>
+      <ol>
+        <li> AutoChips AC7801x: System clock was not configured correctly during a flash-programming operation. AC78016x series was not affected. Fixed. </li>
+        <li> AutoChips AC7801x: Part number AC78016MDQI was missing. Corrected. </li>
+        <li> SoC-600: Under special circumstances, the specified AP to use and AP base address was ignored. In such cases, connect could fail. Fixed.  </li>
+        <li> AutoChips AC7801x: Added flash-programming support for the option byte area. </li>
+      </ol>
+      <h3>Flasher ARM V5</h3>
+      <ol>
+        <li> Universal Flashloader: Renesas RL78: Flash programming via UART could fail for certain baudrates. Introduced with V6.90. Fixed. </li>
+        <li> Universal Flashloader: Renesas RH850: Flash programming via UART could fail for certain baudrates. Introduced with V6.90. Fixed. </li>
+      </ol>
+      <h3>Flasher PRO V5</h3>
+      <ol>
+        <li> Universal Flashloader: Renesas RL78: Flash programming via UART could fail for certain baudrates. Introduced with V6.90. Fixed. </li>
+        <li> Universal Flashloader: Renesas RH850: Flash programming via UART could fail for certain baudrates. Introduced with V6.90. Fixed. </li>
+      </ol>
+      <h3>Flasher PRO-2GB V5</h3>
+      <ol>
+        <li> Universal Flashloader: Renesas RL78: Flash programming via UART could fail for certain baudrates. Introduced with V6.90. Fixed. </li>
+        <li> Universal Flashloader: Renesas RH850: Flash programming via UART could fail for certain baudrates. Introduced with V6.90. Fixed. </li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div id="features" class="divider-global">
+  <div class="container">
+    <h2>Version V6.90 (2020-12-11)</h2>
+    <div>
+      <h3>DLL</h3>
+      <ol>
+        <li> Added flash programming support for some new ST STM32H742xI/G (e.g. &quot;STM32H742VI&quot;). </li>
+        <li> Added flash programming support for some new ST STM32H743xI/G (e.g. &quot;STM32H743VG&quot;). </li>
+        <li> Added internal data flash programming support for NXP MKE14F256xxx16, MKE14F512xxx16, MKE16F256xxx16, MKE16F512xxx16, MKE18F256xxx16, MKE18F512xxx16. </li>
+        <li> Added debug support for Analog&apos;s ADSP-SC589 series. </li>
+        <li> Added internal flash programming support for On Semiconductor AXM0F243-64 series device. </li>
+        <li> RISC-V: Implemented detection of &quot;enter debug mode reason/cause&quot; (MOE). </li>
+        <li> RISC-V: Added support for Andestech RV32 cores: A25MP, A27, A27L2, D25F, D45, N25, N25F, N45 </li>
+        <li> RISC-V: Added support for Andestech RV64 cores: A45, AX25, AX25MP, AX45, AX27, AX27L2, NX25F, NX27V, NX45 </li>
+        <li> Renesas RZ A1L: Connect failed. Introduced in V6.88. Fixed. </li>
+        <li> Increased internal flash programming support for NXP LPC5569 series device from 608kB to 630.5kB internal flash. </li>
+        <li> Added debug support for Altera Arria 10 Cortex-A9 series device. </li>
+        <li> Gigadevice GD32VF103 series (RV32 based): Added support for flash programming (in debug sessions) via flash alias at address 0x0. </li>
+        <li> Unlocking did not work correctly for NXP KE02 and KE06 series devices. Fixed. </li>
+        <li> ON Semiconductor RSL10: Improved flash programming speed by factor 3.6 (up to 380 KB/s). </li>
+        <li> J-Link Web control panel: Commander: Added &quot;ih&quot; Command. </li>
+        <li> Cortex-AR (JTAG): Connect could fail in case of a APB-AP to use was specified by the user (AP map auto detection skipped) but no AP map was specified. Fixed. </li>
+        <li> Added debug support for the AutoChips AC7801x series of devices. </li>
+        <li> Added flash-programming support (internal flash) for the AutoChips AC7801x series of devices. </li>
+        <li> Device names for ST STM32H723xx, STM32H725xx, STM32H730xx, STM32H733xx, and STM32H735xx series devices, fixed. </li>
+      </ol>
+      <h3>Flasher PRO V5</h3>
+      <ol>
+        <li> PDI and SWIM target interface did not work correctly in Universal Flashloader. Fixed. </li>
+      </ol>
+      <h3>J-Flash</h3>
+      <ol>
+        <li> When running multiple J-Flash instances in parallel, it could sometimes happen that a J-Flash instance failed when trying to open or save the global settings file. Fixed. </li>
+      </ol>
+      <h3>J-Flash SPI</h3>
+      <ol>
+        <li> Added support for QSPI programming. </li>
+        <li> When running multiple J-Flash SPI instances in parallel, it could sometimes happen that a J-Flash SPI instance failed when trying to open or save the global settings file. Fixed. </li>
+      </ol>
+      <h3>J-Flash SPI CL</h3>
+      <ol>
+        <li> Added support for QSPI programming. </li>
+      </ol>
+      <h3>RTT Logger</h3>
+      <ol>
+        <li> Added connection over IP via command line. </li>
+      </ol>
+      <h3>Remote Server</h3>
+      <ol>
+        <li> For some devices (e.g. SiLabs EFM32GG series) the error &quot;Unknown EMU command #12 received&quot; was thrown. Fixed. </li>
+      </ol>
+      <h3>SDK</h3>
+      <ol>
+        <li> CSharp: Improved startup sample. </li>
+        <li> CSharp: Added programming sample. </li>
+      </ol>
+      <h3>STM32 Utility</h3>
+      <ol>
+        <li> Added handling for all STM32L4xxxx devices. </li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div id="features" class="divider-global">
+  <div class="container">
+    <h2>Version V6.88c (2020-12-04)</h2>
+    <div>
+      <h3>Commander</h3>
+      <ol>
+        <li> Under special circumstances available target interfaces were not shown correctly. Fixed.  </li>
+      </ol>
+      <h3>DLL</h3>
+      <ol>
+        <li> Cypress CYT3BBxx, CYT4BBxx and CYT4BFxx series devices internal flash programming via Cortex-M7, fixed. </li>
+        <li> NXP MKE04Z8 series: Improved flash-programming speed by about a factor of four. </li>
+        <li> NXP MKE04Z8 series: Flash-programming did not work (too less RAM reported by the DLL). Fixed. </li>
+        <li> Renesas RX66N: Core ID mismatch was reported (warning). Fixed </li>
+        <li> SiFive Nexus trace: Under certain circumstances to many instructions were analyzed on step over. Fixed. </li>
+        <li> RISC-V: Connecting to RV64 based cores from Andestech did not work properly. Fixed. </li>
+      </ol>
+      <h3>GDB Server</h3>
+      <ol>
+        <li> Incorrect watchpoint address reported in case of a watch point event occurred. Fixed. </li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div id="features" class="divider-global">
+  <div class="container">
+    <h2>Version V6.88b (2020-11-27)</h2>
+    <div>
+      <h3>CCS Plugin</h3>
+      <ol>
+        <li> TI TMS570LS: Debug session did not start properly. Fixed. </li>
+      </ol>
+      <h3>DLL</h3>
+      <ol>
+        <li> Renesas RX64M: Flash programming did not work for big endianess. Introduced with V6.88. Fixed. </li>
+        <li> Renesas RX71M: Flash programming did not work for big endianess. Introduced with V6.88. Fixed. </li>
+        <li> Web control panel: RTT tab: When sending data via the RTT tab an error message was shown. Fixed. </li>
+        <li> NXP LPC55S69: Connect to devices without a valid application could fail. Fixed. </li>
+        <li> NXP iMX7D: When programming QSPI flash, the original QSPI clock configuration was not restored correctly after programming. Fixed. </li>
+        <li> Cortex-M: In case J-Link was low on memory (especially J-Link OBs) sometimes the false positive error message &quot;the connected J-Link does not support the connected core ...&quot; was shown. Fixed. </li>
+        <li> Cortex-M: In case J-Link was low on memory (especially J-Link OBs) sometimes the false positive error message &quot;the connected J-Link does not support the ARMv8-M architecture&quot; was shown. Fixed. </li>
+        <li> Cortex-M: In case J-Link was low on memory (especially J-Link OBs) sometimes the false positive error message &quot;the connected J-Link does not support SWD multi-drop&quot; was shown. Fixed. </li>
+        <li> Cortex-M: In case J-Link was low on memory (especially J-Link OBs) sometimes the false positive error message &quot;the connected J-Link does not support CoreSight SoC-600 DAP setups&quot; was shown. Fixed. </li>
+        <li> ST STM32Gxx series devices restoriation of flash lock bits after erasing/programming internal flash, fixed. </li>
+        <li> Improved removal of of zombie connections in J-Link if a previous debug session was not shutdown properly. </li>
+        <li> Improved STM32H7 connect sequence for cases where sleep modes or watch dogs may be active. </li>
+        <li> Added debug support for Renesas RA4M3 series. </li>
+        <li> Added flash programming support for Renesas RA4M3 series. </li>
+        <li> Added debug support for Renesas RA2L1 series. </li>
+        <li> Added flash programming support for Renesas RA2L1 series. </li>
+        <li> Adapted unlock for both cores (APP and NET core) of Nordic nRF5340_xxAA series device for new hardware revision. </li>
+      </ol>
+      <h3>Flasher Portable PLUS V1</h3>
+      <ol>
+        <li> The progress bar did not work correctly for large images. Fixed. </li>
+      </ol>
+      <h3>RTT Logger</h3>
+      <ol>
+        <li> Application did not terminate when a non-decimal value was passed for the command line &quot;-SelectEmuBySN&quot;. Fixed. </li>
+      </ol>
+      <h3>SDK</h3>
+      <ol>
+        <li> Linux/macOS: Sample projects for PC applications could throw warning &quot;unknown option after #pragma GCC diagnostic&quot;. Fixed. </li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div id="features" class="divider-global">
+  <div class="container">
     <h2>Version V6.88a (2020-11-18)</h2>
     <div>
       <h3>DLL</h3>
@@ -344,12 +848,9 @@ div.divider-global:nth-of-type(even) {
       </ol>
       <h3>GDB Server</h3>
       <ol>
-        <li> Added security extension register support for Cortex-M23 and Cortex-M33.  </li>
-      </ol>
-      <h3>GDBServer</h3>
-      <ol>
         <li> Device selection dialog: Removed &quot;RAM Size&quot; column. </li>
         <li> FreeRTOS plugin: Added support for Cortex-M23. </li>
+        <li> Added security extension register support for Cortex-M23 and Cortex-M33.  </li>
       </ol>
       <h3>J-Flash</h3>
       <ol>
@@ -414,17 +915,6 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Cortex-A/R ARMv7: Added support for big endian APs (e.g. AHB-AP on TMS570 series devices) </li>
       </ol>
-      <h3>JLinkRTTLogger</h3>
-      <ol>
-        <li> User input on stdin was broken under Windows. Introduced in V6.86e. Fixed. </li>
-      </ol>
-      <h3>JLinkSTM32</h3>
-      <ol>
-        <li> Added support for STM32G0. </li>
-        <li> Added support for STM32G4. </li>
-        <li> Windows: Deleted notification message box, that device will be mass erased if security is active, since this information was also given via console. </li>
-        <li> User input on stdin was broken under Windows. Introduced in V6.86e. Fixed. </li>
-      </ol>
       <h3>JLinkSTR91x</h3>
       <ol>
         <li> User input on stdin was broken under Windows. Introduced in V6.86e. Fixed. </li>
@@ -438,6 +928,10 @@ div.divider-global:nth-of-type(even) {
         <li> TI RM48 series: Enabled out-of-the-box RTT support on PC side. For target side, see: https://wiki.segger.com/RTT#RTT_on_Cortex-R_targets </li>
         <li> TI RM57 series: Enabled out-of-the-box RTT support on PC side. For target side, see: https://wiki.segger.com/RTT#RTT_on_Cortex-R_targets </li>
       </ol>
+      <h3>RTT Logger</h3>
+      <ol>
+        <li> User input on stdin was broken under Windows. Introduced in V6.86e. Fixed. </li>
+      </ol>
       <h3>RTT Viewer</h3>
       <ol>
         <li> Device selection dialog: Removed &quot;RAM Size&quot; column. </li>
@@ -449,6 +943,13 @@ div.divider-global:nth-of-type(even) {
         <li> Python3Package: jlinksdk: jlinksdk.JLink() now accepts a DLL Path. </li>
         <li> Python3Package: jlinksdk: jlinksdk improved autodetection of the JLink DLL, when JLink() is called without a Path. </li>
         <li> Python3Package: jlinksdk: Added functions GetDllVersionString() and DisassembleInst(). </li>
+      </ol>
+      <h3>STM32 Utility</h3>
+      <ol>
+        <li> Added support for STM32G0. </li>
+        <li> Added support for STM32G4. </li>
+        <li> Windows: Deleted notification message box, that device will be mass erased if security is active, since this information was also given via console. </li>
+        <li> User input on stdin was broken under Windows. Introduced in V6.86e. Fixed. </li>
       </ol>
       <h3>SWOViewer GUI</h3>
       <ol>
@@ -1067,7 +1568,7 @@ div.divider-global:nth-of-type(even) {
         <li> J-Link Web control panel: Added a Web control panel commander. </li>
         <li> Added debug and internal flash and option byte programming support for APEXMIC APMF103xx series devices. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Action Help -&gt; J-Link User Guide now opens the User Guide Wiki page instead of the PDF manual. </li>
         <li> Added monitor commands &quot;ReadCSR&quot; and &quot;WriteCSR&quot; </li>
@@ -1395,7 +1896,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> When selecting SPI as target interface, the reset pin of the target interface was released by accident (even if explicitly asserted before). Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Added &quot;monitor rtosconf [...]&quot; command to allow configuration of RTOS Plugins. </li>
       </ol>
@@ -1471,10 +1972,6 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Improved SWD download speed by up to 13%. </li>
       </ol>
-      <h3>JLinkSTM32</h3>
-      <ol>
-        <li> Support for ST STM32H745_47_55_57 option bytes added. </li>
-      </ol>
       <h3>RemoteServer</h3>
       <ol>
         <li> Connecting to the J-Link Remote Server with a target interface other than JTAG would make a message box appear which told the user that a second debugger connection was detected. Fixed. </li>
@@ -1483,6 +1980,10 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Windows: Added JLink.lib, JLink_x64.lib, SYS.lib, SYS_x64.lib, UTIL.lib, UTIL_x64.lib as GCC variants for GCC / MinGW builds. </li>
         <li> JLINK_GetAvailableLicense() did not swallow &lt;space&gt;, newline, carriage return characters in license strings. This could lead to issues with Embedded Studio and SystemView licenses. Fixed. </li>
+      </ol>
+      <h3>STM32 Utility</h3>
+      <ol>
+        <li> Support for ST STM32H745_47_55_57 option bytes added. </li>
       </ol>
     </div>
   </div>
@@ -2130,7 +2631,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Added an &quot;Edit font size&quot; action to the menu bar. </li>
         <li> Linux/macOS: Settings file contained backslashes. Fixed. </li>
-        <li> Unified ini/settings file name under all OS platforms. (JLinkRTT ViewerSettings.ini) </li>
+        <li> Unified ini/settings file name under all OS platforms. (JLinkRTTViewerSettings.ini) </li>
       </ol>
       <h3>SWO viewer</h3>
       <ol>
@@ -2726,15 +3227,15 @@ div.divider-global:nth-of-type(even) {
         <li> J-Trace PRO V2 Cortex: Added support for CoreSight SoC-600 setups. </li>
         <li> J-Trace PRO V2 RISC-V: Added support for CoreSight SoC-600 setups. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
-        <li> (macOS): Restarting the GDBServer shortly after a previous instance of the GDBServer was closed could lead to the new instance to not start. Fixed. </li>
+        <li> (macOS): Restarting the GDB Server shortly after a previous instance of the GDB Server was closed could lead to the new instance to not start. Fixed. </li>
       </ol>
-      <h3>GDBServer (CL)</h3>
+      <h3>GDB Server (CL)</h3>
       <ol>
         <li> Added &quot;ICSP&quot; as valid argument for the command line option &quot;-if&quot;. </li>
       </ol>
-      <h3>GDBServer (GUI)</h3>
+      <h3>GDB Server (GUI)</h3>
       <ol>
         <li> Added &quot;ICSP&quot; as valid argument for the command line option &quot;-if&quot;. </li>
       </ol>
@@ -2781,14 +3282,14 @@ div.divider-global:nth-of-type(even) {
         <li> Updated license </li>
         <li> Updated KEIL syscalls file so it is compatible to uVision V5. </li>
       </ol>
+      <h3>RTT Client</h3>
+      <ol>
+        <li> Linux: While not being able to attach to a running debug session, RTT Client could eat up to 100% CPU time of a single core of the host system. Fixed. </li>
+        <li> macOS: While not being able to attach to a running debug session, RTT Client could eat up to 100% CPU time of a single core of the host system. Fixed. </li>
+      </ol>
       <h3>RTT Viewer</h3>
       <ol>
         <li> Under some circumstances auto reconnect did not work. Fixed. </li>
-      </ol>
-      <h3>RTTClient</h3>
-      <ol>
-        <li> Linux: While not being able to attach to a running debug session, RTTClient could eat up to 100% CPU time of a single core of the host system. Fixed. </li>
-        <li> macOS: While not being able to attach to a running debug session, RTTClient could eat up to 100% CPU time of a single core of the host system. Fixed. </li>
       </ol>
       <h3>Remote Server</h3>
       <ol>
@@ -2821,7 +3322,7 @@ div.divider-global:nth-of-type(even) {
       </ol>
       <h3>GUIServer</h3>
       <ol>
-        <li> Linux: Restarting the GDBServer shortly after a previous instance of the GDBServer was closed could lead to the new instance to not start. Fixed. </li>
+        <li> Linux: Restarting the GDB Server shortly after a previous instance of the GDB Server was closed could lead to the new instance to not start. Fixed. </li>
       </ol>
     </div>
   </div>
@@ -2847,9 +3348,9 @@ div.divider-global:nth-of-type(even) {
         <li> A deadlock could happen when a dialog created from the DLL was closed. Fixed. </li>
         <li> Under certain circumstances Keil uVision crashed when using RTT Viewer in attach mode. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
-        <li> (macOS): Restarting the GDBServer shortly after a previous instance of the GDBServer was closed could lead to the new instance to not start. Fixed. </li>
+        <li> (macOS): Restarting the GDB Server shortly after a previous instance of the GDB Server was closed could lead to the new instance to not start. Fixed. </li>
       </ol>
       <h3>J-Flash SPI</h3>
       <ol>
@@ -2940,10 +3441,10 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> (macOS/Linux): Entering &apos;?&apos; as device name did not show device selection dialog. Fixed. </li>
       </ol>
-      <h3>RTTClient</h3>
+      <h3>RTT Client</h3>
       <ol>
-        <li> Linux: While not being able to attach to a running debug session, RTTClient could eat up to 100% CPU time of a single core of the host system. Fixed. </li>
-        <li> macOS: While not being able to attach to a running debug session, RTTClient could eat up to 100% CPU time of a single core of the host system. Fixed. </li>
+        <li> Linux: While not being able to attach to a running debug session, RTT Client could eat up to 100% CPU time of a single core of the host system. Fixed. </li>
+        <li> macOS: While not being able to attach to a running debug session, RTT Client could eat up to 100% CPU time of a single core of the host system. Fixed. </li>
       </ol>
     </div>
   </div>
@@ -3013,7 +3514,7 @@ div.divider-global:nth-of-type(even) {
         <li> J-Link EDU Mini: RTT on big endian devices did not work properly (e.g. Renesas RX). Fixed. </li>
         <li> J-Link WiFi V1: RTT on big endian devices did not work properly (e.g. Renesas RX). Fixed. </li>
       </ol>
-      <h3>GDBServer (GUI)</h3>
+      <h3>GDB Server (GUI)</h3>
       <ol>
         <li> (Windows): Changed default font for Log to &quot;Consolas&quot;. </li>
         <li> Main window is now visible in background during configuration of J-Link connection. </li>
@@ -3319,7 +3820,7 @@ div.divider-global:nth-of-type(even) {
         <li> J-Link EDU Mini: cJTAG: Improved protocol stability for buggy target devices that do not keep the line state after rising edge of TCKC </li>
         <li> J-Link EDU/BASE/PLUS V10: When using cJTAG, J-Link FW sometimes crashed. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Made target device name field read-only. </li>
       </ol>
@@ -3490,7 +3991,7 @@ div.divider-global:nth-of-type(even) {
         <li> NXP LPC55Sxx: Flash programming did not work on some early silicon revisions. Fixed. </li>
         <li> Added flash programming support for STM32G030xx series devices. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> For big endian targets, reading all registers resulted in registers being shown in wrong byte order in debugger. Fixed. </li>
       </ol>
@@ -3572,10 +4073,10 @@ div.divider-global:nth-of-type(even) {
         <li> Flasher PRO/ARM: added new ASCII commands &quot;HasSecureArea&quot; and &quot;SecureArea Create/Remove&quot;. </li>
         <li> Flasher Portable PLUS: &quot;displayname&quot; was overwritten by datafile name if the name was longer than the first line. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
-        <li> When using semihosting mode 2 (system calls forwarded to be handled GDB, not GDBServer) it could happen that a SYS_WRITE placed an error response to R0 of the target application, even if everything worked fine. Fixed. </li>
-        <li> When using semihosting mode 2 (system calls forwarded to be handled GDB, not GDBServer) it could happen that a SYS_WRITE placed an error response to R0 of the target application, even if everything worked fine. Fixed. </li>
+        <li> When using semihosting mode 2 (system calls forwarded to be handled GDB, not GDB Server) it could happen that a SYS_WRITE placed an error response to R0 of the target application, even if everything worked fine. Fixed. </li>
+        <li> When using semihosting mode 2 (system calls forwarded to be handled GDB, not GDB Server) it could happen that a SYS_WRITE placed an error response to R0 of the target application, even if everything worked fine. Fixed. </li>
       </ol>
       <h3>Installer</h3>
       <ol>
@@ -3766,7 +4267,7 @@ div.divider-global:nth-of-type(even) {
         <li> J-Link PRO V4: RISC-V: JTAG: When selecting another scan chain between J-Link commands (e.g. via &quot;i&quot; command in J-Link Commander), following J-Link operations returned with an error. Fixed. </li>
         <li> J-Link EDU Mini: RISC-V: JTAG: When selecting another scan chain between J-Link commands (e.g. via &quot;i&quot; command in J-Link Commander), following J-Link operations returned with an error. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Added RTOSPlugin for ChibiOS. </li>
         <li> Windows: GUI element borders were not shown in the Windows Classic Theme. Fixed. </li>
@@ -3797,7 +4298,7 @@ div.divider-global:nth-of-type(even) {
         <li> Chapter &quot;J-Link software and documentation package&quot; Section &quot;J-Link Commander (Command line tool) Added command &quot;SetTimeoutCmd&quot; </li>
         <li> Chapter &quot;J-Link software and documentation package&quot; Section &quot;J-Link Commander (Command line tool) Added command &quot;stepover&quot; </li>
         <li> Chapter &quot;J-Link software and documentation package&quot; Section &quot;J-Link Commander (Command line tool) Added command &quot;writecsr&quot; </li>
-        <li> GDBServer command line parameter &quot;-JLinkDevicesXMLPath &lt;Path&gt;&quot; was not described properly. Fixed. </li>
+        <li> GDB Server command line parameter &quot;-JLinkDevicesXMLPath &lt;Path&gt;&quot; was not described properly. Fixed. </li>
       </ol>
       <h3>UM08003</h3>
       <ol>
@@ -3958,7 +4459,7 @@ div.divider-global:nth-of-type(even) {
         <li> NXP LPC18xx / LPC43xx: After QSPI flash programming, the QSPI flash memory was no longer memory mapped accessible. Introduced in V6.41. Fixed. </li>
         <li> Added flash programming support for ST STM32G4xx series devices. </li>
         <li> QSPI flash programming: When the QE bit was set before flash programming, it has been cleared but not restored by the DLL. Introduced in V6.46h. Fixed. </li>
-        <li> Re-attaching to existing debug session after connecting and disconnecting once via TELNET (e.g. used by RTTClient and RTT Viewer) did not work properly. Fixed. </li>
+        <li> Re-attaching to existing debug session after connecting and disconnecting once via TELNET (e.g. used by RTT Client and RTT Viewer) did not work properly. Fixed. </li>
         <li> Windows: Renesas RX: When using FINE interface and disabling ongoining debug mode on debug session close, it could happen that a thread was not exited gracefully, causing handle leaks. Fixed. </li>
         <li> Microchip J-32 OEM probes could not support legacy Atmel devices. Fixed. </li>
         <li> JTAG: When only having 1 TAP in the JTAG chain and its &lt;IRLen&gt; matches the one for the configured CPU core but the TAP-ID was unknown, connect did not work. Fixed. </li>
@@ -4020,9 +4521,9 @@ div.divider-global:nth-of-type(even) {
         <li> Added stand-alone mode support for Traveo2 CYT2B and CYT4B devices. </li>
         <li> Added stand-alone mode support for Traveo2 CYT2B and CYT4B devices. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
-        <li> Under special circumstances, a remote &quot;g&quot; packet error popped up when using the GDBServer with Cortex-AR or MIPS. Fixed. </li>
+        <li> Under special circumstances, a remote &quot;g&quot; packet error popped up when using the GDB Server with Cortex-AR or MIPS. Fixed. </li>
       </ol>
       <h3>GUI applications</h3>
       <ol>
@@ -4073,6 +4574,19 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> USB driver for VCOM: Under very special circumstances bluescreens could occur when using VCOM. Fixed. (Driver update only applies to Windows Vista and later. Windows XP still uses the old driver as the new one is not compatible to Windows XP anymore) </li>
       </ol>
+      <h3>RTT Client</h3>
+      <ol>
+        <li> Added command line parameter &quot;?&quot; (Same functionality as &quot;-?&quot;). </li>
+        <li> Added command line parameter &quot;?&quot; (Same functionality as &quot;-?&quot;). </li>
+        <li> Connecting to existing session did not work correctly on MacOS. Fixed. </li>
+        <li> Linux: Ubuntu: Attaching to existing debug session did not work properly. Fixed. </li>
+      </ol>
+      <h3>RTT Logger</h3>
+      <ol>
+        <li> Added command line parameter &quot;?&quot; (Same functionality as &quot;-?&quot;). </li>
+        <li> Added command line parameter &quot;?&quot; (Same functionality as &quot;-?&quot;). </li>
+        <li> Linux: Using logrotate lead to null characters being printed before RTT data. Fixed., </li>
+      </ol>
       <h3>RTT Viewer</h3>
       <ol>
         <li> Added information display on how to correctly enter RTT control block search range. </li>
@@ -4092,19 +4606,6 @@ div.divider-global:nth-of-type(even) {
         <li> Improved the handling in case reading of RTT data failed. </li>
         <li> Linux: Ubuntu: Option &quot;Attaching to existing debug session&quot; did not work properly. Fixed. </li>
         <li> Some ANSI CSI sequences caused the application to crash. Fixed. </li>
-      </ol>
-      <h3>RTTClient</h3>
-      <ol>
-        <li> Added command line parameter &quot;?&quot; (Same functionality as &quot;-?&quot;). </li>
-        <li> Added command line parameter &quot;?&quot; (Same functionality as &quot;-?&quot;). </li>
-        <li> Connecting to existing session did not work correctly on MacOS. Fixed. </li>
-        <li> Linux: Ubuntu: Attaching to existing debug session did not work properly. Fixed. </li>
-      </ol>
-      <h3>RTTLogger</h3>
-      <ol>
-        <li> Added command line parameter &quot;?&quot; (Same functionality as &quot;-?&quot;). </li>
-        <li> Added command line parameter &quot;?&quot; (Same functionality as &quot;-?&quot;). </li>
-        <li> Linux: Using logrotate lead to null characters being printed before RTT data. Fixed., </li>
       </ol>
       <h3>RemoteServer</h3>
       <ol>
@@ -4147,7 +4648,7 @@ div.divider-global:nth-of-type(even) {
       </ol>
       <h3>DLL</h3>
       <ol>
-        <li> Re-attaching to existing debug session after connecting and disconnecting once via TELNET (e.g. used by RTTClient and RTT Viewer) did not work properly. Fixed. </li>
+        <li> Re-attaching to existing debug session after connecting and disconnecting once via TELNET (e.g. used by RTT Client and RTT Viewer) did not work properly. Fixed. </li>
         <li> Windows: Renesas RX: When using FINE interface and disabling ongoining debug mode on debug session close, it could happen that a thread was not exited gracefully, causing handle leaks. Fixed. </li>
         <li> Microchip J-32 OEM probes could not support legacy Atmel devices. Fixed. </li>
         <li> JTAG: When only having 1 TAP in the JTAG chain and its &lt;IRLen&gt; matches the one for the configured CPU core but the TAP-ID was unknown, connect did not work. Fixed. </li>
@@ -4169,16 +4670,16 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Licenses that have been burned into J-Link via J-Link Commander &quot;license add&quot; command were not detected properly. Fixed. </li>
       </ol>
+      <h3>RTT Client</h3>
+      <ol>
+        <li> Linux: Ubuntu: Attaching to existing debug session did not work properly. Fixed. </li>
+      </ol>
       <h3>RTT Viewer</h3>
       <ol>
         <li> Fixed typo. </li>
         <li> Improved the handling in case reading of RTT data failed. </li>
         <li> Linux: Ubuntu: Option &quot;Attaching to existing debug session&quot; did not work properly. Fixed. </li>
         <li> Some ANSI CSI sequences caused the application to crash. Fixed. </li>
-      </ol>
-      <h3>RTTClient</h3>
-      <ol>
-        <li> Linux: Ubuntu: Attaching to existing debug session did not work properly. Fixed. </li>
       </ol>
       <h3>UM08002</h3>
       <ol>
@@ -4273,13 +4774,13 @@ div.divider-global:nth-of-type(even) {
         <li> J-Trace PRO V2 Cortex-M: When connecting via IP and using RTT it could happen that J-Link FW crashed and rebooted if the PC did not exit the controlling process in a clean way. Fixed. </li>
         <li> Flasher Portable PLUS did not work in J-Link Mode while showing &quot;OK&quot; message. Fixed. </li>
       </ol>
+      <h3>RTT Logger</h3>
+      <ol>
+        <li> Linux: Using logrotate lead to null characters being printed before RTT data. Fixed. </li>
+      </ol>
       <h3>RTT Viewer</h3>
       <ol>
         <li> In some occasions, the CL option &apos;--autoconnect&apos; did not work. Fixed. </li>
-      </ol>
-      <h3>RTTLogger</h3>
-      <ol>
-        <li> Linux: Using logrotate lead to null characters being printed before RTT data. Fixed. </li>
       </ol>
       <h3>SDK</h3>
       <ol>
@@ -4321,17 +4822,17 @@ div.divider-global:nth-of-type(even) {
         <li> Changed an ambiguous J-Link report output. </li>
         <li> Added native trace buffer support for Renesas RZ/A2M series. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
-        <li> Under special circumstances, a remote &quot;g&quot; packet error popped up when using the GDBServer with Cortex-AR or MIPS. Fixed. </li>
+        <li> Under special circumstances, a remote &quot;g&quot; packet error popped up when using the GDB Server with Cortex-AR or MIPS. Fixed. </li>
+      </ol>
+      <h3>RTT Client</h3>
+      <ol>
+        <li> Connecting to existing session did not work correctly on MacOS. Fixed. </li>
       </ol>
       <h3>RTT Viewer</h3>
       <ol>
         <li> The &apos;--autoconnect&apos; CL option caused the application to crash. Fixed. </li>
-      </ol>
-      <h3>RTTClient</h3>
-      <ol>
-        <li> Connecting to existing session did not work correctly on MacOS. Fixed. </li>
       </ol>
       <h3>RemoteServer</h3>
       <ol>
@@ -4583,7 +5084,7 @@ div.divider-global:nth-of-type(even) {
         <li> Microchip (Atmel) ATSAM5x family: Under special circumstances, erase of the auxiliary space did not work. Fixed. </li>
         <li> Under special circumstances, the used timeout for Open Flashloader based algorithms was chosen too low resulting in timeout errors. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Improved RTOS plugin handling, especially when having FPU support </li>
         <li> Improved RTOS plugin for embOS to be more descriptive (info will be added to RTOS plugin SDK documentation as well) </li>
@@ -4692,7 +5193,7 @@ div.divider-global:nth-of-type(even) {
         <li> ST STM32L0 family: Attach did not work. Fixed. </li>
         <li> Under special circumstances, target connection via JTAG did not work (e.g. for TI CC1310F128). Introduced in V6.44c. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Added support for RV64 (RISC-V 64-bit) </li>
         <li> Some cores were shown as ???. Fixed. </li>
@@ -4879,7 +5380,7 @@ div.divider-global:nth-of-type(even) {
         <li> Under special circumstances it could happen that in tunneled mode a connection to the tunnel server was closed immediately, even if the connection itself was fine. Fixed. </li>
         <li> Added J-Link selection options. </li>
       </ol>
-      <h3>STM32 Unlock utility</h3>
+      <h3>STM32 Utility</h3>
       <ol>
         <li> Added support to reset option bytes for STM32H7xxxx. </li>
       </ol>
@@ -4981,7 +5482,7 @@ div.divider-global:nth-of-type(even) {
         <li> Flash programming support for Dialog Semiconductor DA14195 series device, PLL settings were wrong. Fixed. </li>
         <li> When using streaming trace with timestamps, under very special circumstances a buffer overflow could happen. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> cJTAG could not be selected in the TIF selection dialog. Fixed. </li>
       </ol>
@@ -5015,7 +5516,7 @@ div.divider-global:nth-of-type(even) {
         <li> J-Link ULTRA+ V4: Added support for TIF Microchip 2-wire JTAG via TDI </li>
         <li> J-Link PRO V4: Added support for TIF Microchip 2-wire JTAG via TDI </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Cortex-M: Reading/Writing of single precision FPU registers s23-s31 did not work. Fixed. </li>
         <li> Cortex-M: Writing of double precision FPU registers d0-d15 did not work. Fixed. </li>
@@ -5129,7 +5630,7 @@ div.divider-global:nth-of-type(even) {
         <li> J-Link EDU/BASE/PLUS V10: Added support for target interface &quot;Microchip 2-wire JTAG via TDI&quot; </li>
         <li> PCode support for Firmware_JLink_Lite_XMC4200, added. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Added double precision floating point registers (to be shown in Eclipse based IDEs like NXP MCUXpresso) for Cortex-M based devices. </li>
       </ol>
@@ -5155,15 +5656,15 @@ div.divider-global:nth-of-type(even) {
         <li> Added ASM variant for RTT on ARMv7-M (Cortex-M3/M4/M7) </li>
         <li> Added defines for gcc and clang in RTT assembly file for non Embedded Studio setups. Otherwise build errors would pop up. </li>
       </ol>
+      <h3>RTT Client</h3>
+      <ol>
+        <li> Added command line option to enable/ disable local echo: &quot;-LocalEcho &lt;On/Off&gt;&quot;. </li>
+      </ol>
       <h3>RTT Viewer</h3>
       <ol>
         <li> Set &apos;All terminals&apos; tab to be selected by default. </li>
         <li> &quot;unspecified&quot; script file would show a warning. Fixed. </li>
         <li> Fixed parsing of RTT Control block address. </li>
-      </ol>
-      <h3>RTTClient</h3>
-      <ol>
-        <li> Added command line option to enable/ disable local echo: &quot;-LocalEcho &lt;On/Off&gt;&quot;. </li>
       </ol>
       <h3>Remote Server</h3>
       <ol>
@@ -5654,11 +6155,11 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Windows: Updated USB driver installer to support J-Links that enumerate as multi VCOM devices </li>
       </ol>
-      <h3>RTTClient</h3>
+      <h3>RTT Client</h3>
       <ol>
         <li> Linux/macOS: Renamed executable to match standard naming scheme. Symlinks for backward compatibility have been added </li>
       </ol>
-      <h3>RTTLogger</h3>
+      <h3>RTT Logger</h3>
       <ol>
         <li> Linux/macOS: Renamed executable to match standard naming scheme. Symlinks for backward compatibility have been added </li>
       </ol>
@@ -5810,7 +6311,7 @@ div.divider-global:nth-of-type(even) {
         <li> JTAG: Under special circumstances, the last clock (TCK) of a JTAG sequence could look like a glitch because it did not have a 50% duty cycle. Fixed. Affected firmwares: Flasher ARM V4, Flasher PRO V4, Flasher Portable, Flasher Portable PLUS, Flasher PPC V4, Flasher RX V4 </li>
         <li> JTAG: Under special circumstances, glitches on TDI and TMS lines could happen at the start of a sequence, before the first falling edge on TCK was output. Fixed. Affected firmwares: Flasher ARM V4, Flasher PRO V4, Flasher Portable, Flasher Portable PLUS, Flasher PPC V4, Flasher RX V4 </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Memory leak occurred when streaming trace feature (qSeggerSTRACE:GetInstStats: command) was used, e.g. in VisualGDB. Fixed. </li>
       </ol>
@@ -5899,7 +6400,7 @@ div.divider-global:nth-of-type(even) {
         <li> Infineon TLE986x/TLE987x: Added support for data flash and fixed two bugs in the algorithm. </li>
         <li> Added CORESIGHT_SetTPIUBaseAddr exec command. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> GUI version was not correctly updated on target state change (halted -&gt; executing). Fixed. </li>
         <li> Improved stability of the RTOS plug-ins. </li>
@@ -5933,9 +6434,9 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> The GUI did not work properly when using batch mode programming. Fixed. Affected firmwares: Flasher Portable PLUS </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
-        <li> Command line option -log did not work properly for GUI version of GDBServer (Introduced in V6.30). Fixed. </li>
+        <li> Command line option -log did not work properly for GUI version of GDB Server (Introduced in V6.30). Fixed. </li>
         <li> Debug session could fail with error message &quot;Remote failure reply: ...&quot; if R0 of the target CPU contained &quot;Ex&quot; in the lowest byte of the register value. Introduced in V6.30k. Fixed. </li>
       </ol>
       <h3>J-Flash</h3>
@@ -6009,7 +6510,7 @@ div.divider-global:nth-of-type(even) {
         <li> Downloading the config &amp; data file to the Flasher did not work when the project contained a CFI auto-detect flash bank. Fixed. </li>
         <li> Silicon Labs EFM32 / EFR32 devices: Flasher did not support programming of secured devices in stand-alone mode. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Added support for SEGGER specific GDB protocol extension for streaming trace (qSeggerSTRACE:caps, qSeggerSTRACE:GetInstStats) </li>
         <li> Improved parsing speed of GDB protocol packets </li>
@@ -6241,7 +6742,7 @@ div.divider-global:nth-of-type(even) {
         <li> When using high target interface speeds (&gt; 20 MHz) it could happen that debug operations on Cortex-A/R targets timed out and threw errors even if signal quality etc. were all good. Fixed. Affected firmwares: J-Link BASE V10, J-Link PLUS V10, J-Link EDU V10, J-Link BASE V9, J-Link PLUS V9, J-Link EDU V9, J-Link ULTRA+ V4, J-Link PRO V4, J-Trace PRO V1 Cortex-M, J-Trace PRO V2 Cortex-M, J-Trace PRO V2 Cortex, J-Link Lite ARM V9, J-Link Lite Cortex-M V9, J-Link EDU Mini </li>
         <li> When using RTT/memory stop mode with high target interface speeds (&gt; 20 MHz), it could happen that firmware hang. Introduced in V6.30. Fixed. Affected firmwares: J-Link BASE V10, J-Link PLUS V10, J-Link EDU V10, J-Link BASE V9, J-Link PLUS V9, J-Link EDU V9, J-Link ULTRA+ V4, J-Link PRO V4, J-Trace PRO V1 Cortex-M, J-Trace PRO V2 Cortex-M, J-Trace PRO V2 Cortex, J-Link Lite ARM V9, J-Link Lite Cortex-M V9, J-Link EDU Mini </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Disabling option &quot;Localhost only&quot; did not work in GUI version (ports were still opened listening localhost only). Introduced in V6.30. Fixed. </li>
       </ol>
@@ -6345,7 +6846,7 @@ div.divider-global:nth-of-type(even) {
         <li> Flasher failed to program Renesas RX65N series via FINE if 2 MHz was selected, while J-Link BASE/PLUS worked. Fixed. Affected firmwares: Flasher PRO V4, Flasher RX V4, Flasher Portable V1, Flasher Portable PLUS V1 </li>
         <li> The Flasher Secure Area feature did not work in recent versions of the Flasher firmware (Secure Area detection failed). Fixed. Affected firmwares: Flasher ARM V4, Flasher PRO V4, Flasher Portable, Flasher Portable PLUS, Flasher PPC V4, Flasher RX V4 </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Device selection dialog in GUI version did not show PIC32 devices. Fixed. </li>
         <li> GUI thread did not lock correctly (log output could be lost). Fixed. </li>
@@ -6399,10 +6900,10 @@ div.divider-global:nth-of-type(even) {
         <li> Auto-detection of latest installed J-Link DLL version did not work properly for 64-bit applications. (Introduced with V6.30). Fixed. </li>
         <li> Under certain circumstances connect to Altera Cyclone V was not possible. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Multiple instances of about dialog could be opened. Fixed. </li>
-        <li> About dialog could stay open if GDBServer exited itself while about dialog was open. Fixed. </li>
+        <li> About dialog could stay open if GDB Server exited itself while about dialog was open. Fixed. </li>
         <li> Sometimes GUI version did not start under macOS. (Introduced with V6.30). Fixed. </li>
       </ol>
       <h3>LicenseManager</h3>
@@ -6446,11 +6947,11 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Reset did not work in stand-alone mode for analog devices Analog Devices ADuCM3x and ADuCRF series devices. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Introduced GUI version for Linux and macOS </li>
       </ol>
-      <h3>GDBServerCL</h3>
+      <h3>GDB ServerCL</h3>
       <ol>
         <li> Command line output was broken in case open flashloader was used and flash contents already matched the data to be programmed. Fixed. </li>
       </ol>
@@ -6521,7 +7022,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Read in from SWO of external devices with J-Link OB on Nordic Semiconductor nrF52-DK, fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Implemented WriteDP/WriteAP/ReadDP/ReadAP monitor commands </li>
       </ol>
@@ -6862,7 +7363,7 @@ div.divider-global:nth-of-type(even) {
         <li> Added new command string (SetHostIF &lt;Interface&gt;) which allows to configure the host interface (e.g. IP=192.168.0.12). </li>
         <li> Infineon TLE985x: Connect did not work and under special circumstances, flash programming failed. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> A buffer overflow could occur, if a symbol name in the RTOS plugin was longer than 31 characters. Fixed. </li>
       </ol>
@@ -7115,7 +7616,7 @@ div.divider-global:nth-of-type(even) {
         <li> RTT did not work correctly on Cortex-A and Cortex-R based devices. Introduced in V6.16. Fixed. </li>
         <li> TI MSP432P401V / MSP432P411V: Internal flash size was incorrect. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> RTOS plugins handled some error conditions incorrectly. Fixed. </li>
       </ol>
@@ -7247,7 +7748,7 @@ div.divider-global:nth-of-type(even) {
         <li> Added built-in HSS support to allow sampling frequencies of 1 kHz instead of 50 Hz. Affected firmwares: JLink-OB-SAM3U128, JLink-OB-SAM3U128 V3 </li>
         <li> Connecting to Infineon XMC4400 series via SWD failed. Introduced in V6.16g. Fixed. Affected firmwares: J-Link ULTRA+ V4, J-Link PRO V4 </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Server could hang and did not respond to any pause/exit etc. requests anymore if target application used semihosting with a getchar() putchar() echo implementation. Fixed. </li>
         <li> Command line version now outputs full, passed command line via stdout. </li>
@@ -7375,7 +7876,7 @@ div.divider-global:nth-of-type(even) {
         <li> Renesas RX simulation did not handle Carry flag correctly for some variants of the ADD instruction </li>
         <li> Added flash programming support for some new STM32F723xx and STM32F733 series devices. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> -timeout command line option was removed by accident. Fixed. </li>
       </ol>
@@ -7474,7 +7975,7 @@ div.divider-global:nth-of-type(even) {
         <li> If VCOM functionality with hardware flow control was used and target continued sending data after terminal session on PC side has been closed, it could happen that J-Link did not continue to receive VCOM data on a new COM port open. Fixed. Affected firmwares: JLink-OB-SAM3U128-mbedBTL-NordicSemi </li>
         <li> Added support for low-level Coresight DAP accesses in firmware, to speed up debugging during startup etc. Affected firmwares: J-Link BASE V10, J-Link PLUS V10, J-Link EDU V10, J-Link BASE V9, J-Link PLUS V9, J-Link EDU V9, J-Link ULTRA+ V4, J-Link PRO V4, J-Trace PRO V1 Cortex-M, J-Link Lite ARM V9, J-Link Lite Cortex-M V9, J-Link EDU Mini </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Writing registers resulted in wrong terminal output. Fixed. </li>
         <li> The qCRC command was accepted although it is not supported. Fixed. </li>
@@ -7584,10 +8085,10 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Improved stand-alone mode programming for NXP Kinetis-E, Kinetis-K, Kinetis-L and Kinetis-M series devices to be able to handle devices with enabled write protection. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> IP addresses were not shown correctly. Fixed. </li>
-        <li> Multiple instances of the GDBServer were possible on windows. Fixed. </li>
+        <li> Multiple instances of the GDB Server were possible on windows. Fixed. </li>
       </ol>
       <h3>J-Flash</h3>
       <ol>
@@ -7691,7 +8192,7 @@ div.divider-global:nth-of-type(even) {
         <li> Added flash programming support for Microchip (Atmel) SAMC20J15A and SAMC21J15A series devices. </li>
         <li> Linux: When running a Linux VM on a Mac host, USB performance was poor (Other setups were not affected!). Introduced with V6.14 when improving streaming trace via USB for J-Trace PRO. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> When using GDB Server with GDB V7.12 and later versions, unintentional resets were issued (problem caused by change inside GDB, not GDB Server). Fixed. </li>
       </ol>
@@ -7753,7 +8254,7 @@ div.divider-global:nth-of-type(even) {
         <li> Under special circumstances, Flasher filled unselected sectors with erased value in stand-alone mode. Fixed. </li>
         <li> For NXP KE0x series devices, Flasher performed a mass erase via MDM-AP always. Improved so the mass erase is performed if required (device is secured), only. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Logging of TCP traffic was accidentally removed. Fixed. </li>
       </ol>
@@ -7812,9 +8313,9 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Flash programming in stand-alone mode did not work for Renesas Synergy S7G2 series devices. Fixed </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
-        <li> Under Linux / macOS, after repeatedly opening and closing a connection to the GDBServer, GDBServer stopped accepting new connections. Fixed. </li>
+        <li> Under Linux / macOS, after repeatedly opening and closing a connection to the GDB Server, GDB Server stopped accepting new connections. Fixed. </li>
       </ol>
       <h3>J-Flash</h3>
       <ol>
@@ -7854,7 +8355,7 @@ div.divider-global:nth-of-type(even) {
         <li> Under special circumstances, the feature area of the J-Link contained garbage which could result in incorrect behavior of the firmware. Fixed. Affected firmwares: J-Link OpenSDA. Firmware 17-02-28: https://www.segger.com/downloads/jlink#JLinkOpenSDABoardSpecificFirmwares </li>
         <li> could hang if multiple of 2 KB memory have been read. Fixed. Affected firmwares: J-Link-OB-RX621-ARM-SWD </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> RTOS plugins did not load under linux/mac, if given with an absolute path. Fixed. </li>
         <li> Changed RTOS plugins to dynamic libs for Mac. Improved loading algorithm for RTOS libs. </li>
@@ -7863,7 +8364,7 @@ div.divider-global:nth-of-type(even) {
       <h3>SDK</h3>
       <ol>
         <li> JLINKARM_STRACE_Config() did not evaluate &quot;PortWidth&quot; config correctly. Fixed. </li>
-        <li> RTTLogger example project did not build. Fixed. </li>
+        <li> RTT Logger example project did not build. Fixed. </li>
       </ol>
     </div>
   </div>
@@ -7946,9 +8447,9 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Added stand-alone mode support for secured TI CC13xx processors. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
-        <li> Under Linux / macOS, after repeatedly opening and closing a connection to the GDBServer, GDBServer stopped accepting new connections. Fixed. </li>
+        <li> Under Linux / macOS, after repeatedly opening and closing a connection to the GDB Server, GDB Server stopped accepting new connections. Fixed. </li>
       </ol>
       <h3>J-Flash</h3>
       <ol>
@@ -7989,14 +8490,14 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Windows: Updated USB driver of J-Link / J-Trace which improves performance especially for streaming trace via USB by app. 100% (from 20 MB/s to 38 MB/s) </li>
       </ol>
+      <h3>RTT Logger</h3>
+      <ol>
+        <li> Added command line options. </li>
+      </ol>
       <h3>RTT Viewer</h3>
       <ol>
         <li> Added option to specify a J-Link script file. </li>
         <li> Added &quot;bright theme&quot; command line option. </li>
-      </ol>
-      <h3>RTTLogger</h3>
-      <ol>
-        <li> Added command line options. </li>
       </ol>
       <h3>RemoteServer</h3>
       <ol>
@@ -8182,7 +8683,7 @@ div.divider-global:nth-of-type(even) {
         <li> Added support for VMSD (basis for drag &amp; drop programming support) Affected firmwares: J-Link BASE V10, J-Link PLUS V10, J-Link ULTRA+ V4, J-Link PRO V4, J-Link EDU V10 </li>
         <li> OpenSDA: Under very special circumstances it could happen that when sending data to the target via VCOM, the second byte sent after powering up OpenSDA was swallowed. Fixed. New firmware images: https://www.segger.com/downloads/jlink#JLinkOpenSDABoardSpecificFirmwares </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> RTOS plug-in were not found under linux, if the executable has been started using PATH environment variable. Fixed. </li>
       </ol>
@@ -8242,7 +8743,7 @@ div.divider-global:nth-of-type(even) {
         <li> Improved overall speed for JTAG and SWD transactions by up to 20% Affected firmwares: J-Link PRO V4, J-Link ULTRA+ V4 </li>
         <li> Improved memory write speed when using SWD by up to 40% under special circumstances. Affected firmwares: J-Link PRO V4, J-Link ULTRA+ V4 </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> The FreeRTOS plugin could crash the GDB server in case of a zero length task name. Fixed. </li>
         <li> Linux version exited itself while sending SWO data, if SWO socket was closed. Fixed. </li>
@@ -8474,7 +8975,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Added stand-alone mode support for secured Nordic Semi nRF52 series devices. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> RTOS plugins relative to executable were not found if GDB server was startet in a different directory. Fixed. </li>
       </ol>
@@ -8518,9 +9019,9 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Stand-alone mode programming of Atmel SAMD20 devices did not work when the data image included option bytes (fuses). Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
-        <li> Some targets could put into a state where a connect succeeds but halting the CPU fails (CPU does not respond to debug halt request) and this behavior could be cured by a reset. This has been seen on some Cortex-M devices. The failed halt request made GDBServer to return with an error immediately, instead of trying to &quot;cure&quot; this state via reset. Fixed. </li>
+        <li> Some targets could put into a state where a connect succeeds but halting the CPU fails (CPU does not respond to debug halt request) and this behavior could be cured by a reset. This has been seen on some Cortex-M devices. The failed halt request made GDB Server to return with an error immediately, instead of trying to &quot;cure&quot; this state via reset. Fixed. </li>
       </ol>
       <h3>J-Flash</h3>
       <ol>
@@ -8764,12 +9265,9 @@ div.divider-global:nth-of-type(even) {
       </ol>
       <h3>GDB Server</h3>
       <ol>
-        <li> Added new command line option &quot;-JLinkDevicesXMLPath&quot;. </li>
-      </ol>
-      <h3>GDBServer</h3>
-      <ol>
         <li> Added monitor command for loading RTOS plugin. </li>
         <li> Added stack size check for embOS RTOS plugin. </li>
+        <li> Added new command line option &quot;-JLinkDevicesXMLPath&quot;. </li>
       </ol>
       <h3>J-Flash</h3>
       <ol>
@@ -8841,9 +9339,9 @@ div.divider-global:nth-of-type(even) {
       </ol>
       <h3>DLL Updater</h3>
       <ol>
-        <li> Added support for updating Atollic TrueSTUDIO (DLL + GDBServer) </li>
+        <li> Added support for updating Atollic TrueSTUDIO (DLL + GDB Server) </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Atollic&apos;s GDB client crashed after a target reset. Fixed. </li>
       </ol>
@@ -8929,7 +9427,7 @@ div.divider-global:nth-of-type(even) {
         <li> Cortex-M: Under special circumstances the log &quot;Debugger tries to set PC to odd value...&quot; was output by the DLL when used with some debuggers (e.g. SEGGER Ozone), even though everything was O.K. Fixed. </li>
         <li> HSS data was still requested from J-Link even if the target CPU was not running, resulting in unnecessary CPU load on DLL side while there was no activity on the target side. Improved. </li>
         <li> HSS timestamp was not &quot;halted&quot; while target CPU was halted, resulting in non-continuous timestamps in case CPU was halted + started multiple times, which could look like data was lost (due to buffer overflows etc.) even in case no data was lost. Fixed. </li>
-        <li> Changed STM32 unlock behavior: Where possible, the DLL now only resets the Option Bytes that effect the Read/Write protection status of the device (the User Option Bytes stay untouched). If a complete reset to factory defaults of the Option Bytes is desired, the J-Link STM32 Unlock utility (JLinkSTM32.exe) can be used. Therefore, the J-Link DLL no longer resets the User Option Bytes of the following device series: STM32L0xx, STM32L1xx, STM32L4xx , STM32F0xx, STM32F1xx, STM32F3xx </li>
+        <li> Changed STM32 unlock behavior: Where possible, the DLL now only resets the Option Bytes that effect the Read/Write protection status of the device (the User Option Bytes stay untouched). If a complete reset to factory defaults of the Option Bytes is desired, the J-Link STM32 Utility (STM32 Utility.exe) can be used. Therefore, the J-Link DLL no longer resets the User Option Bytes of the following device series: STM32L0xx, STM32L1xx, STM32L4xx , STM32F0xx, STM32F1xx, STM32F3xx </li>
         <li> When connecting with multiple processes to the same J-Link in parallel, using different target interface speeds in each process, the processes could hang. Fixed. </li>
       </ol>
       <h3>Firmware</h3>
@@ -8942,7 +9440,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Improved error handling in case target entered a low power mode that inhibited J-Link from reading RAM contents Affected firmwares: J-Link V9, J-Link V10, J-Link ULTRA+ V4, J-Link PRO V4, J-Trace PRO V1 Cortex-M, ST-LINK V2, ST-LINK V2-1 </li>
       </ol>
-      <h3>STM32 Unlock utility</h3>
+      <h3>STM32 Utility</h3>
       <ol>
         <li> STM32F2xx, STM32F4xx, STM32F7xx series devices: During the unlock procedure, Bits [11:08] of nWRP of the 1st flash bank were not reset to factory default. Fixed. </li>
         <li> STM32F469xx, STM32F479xx series devices: During the unlock procedure, SPRMOD and nWRP of the 2nd flash bank were not reset to factory default. Fixed. </li>
@@ -9172,13 +9670,10 @@ div.divider-global:nth-of-type(even) {
       <h3>GDB Server</h3>
       <ol>
         <li> Floating point registers were not written correctly on big endian targets. Fixed. </li>
-        <li> Floating point registers were not displayed correctly on big endian targets. Fixed. </li>
-        <li> Added -RTTTelnetport &lt;Port&gt; Option. </li>
-      </ol>
-      <h3>GDBServer</h3>
-      <ol>
         <li> Added feature &quot;exception debugging&quot; </li>
         <li> Implemented support for thread debugging with RTOS by using a plug-in </li>
+        <li> Floating point registers were not displayed correctly on big endian targets. Fixed. </li>
+        <li> Added -RTTTelnetport &lt;Port&gt; Option. </li>
       </ol>
       <h3>J-Flash</h3>
       <ol>
@@ -9259,7 +9754,7 @@ div.divider-global:nth-of-type(even) {
         <li> Added defines for current PSPLIM and MSPLIM register indexes. </li>
         <li> The function declaration of JLINKARM_LOG() in the C# sample was incorrect. Fixed. </li>
       </ol>
-      <h3>STM32 unlock utility</h3>
+      <h3>STM32 Utility</h3>
       <ol>
         <li> Added read / write (RDP/PCROP/WRP) protection detection and unlock support for ST STM32L4 devices. </li>
       </ol>
@@ -9486,7 +9981,7 @@ div.divider-global:nth-of-type(even) {
         <li> The &quot;Do not show this message again&quot; was not handled correctly for the flash breakpoints evaluation dialog. Fixed. </li>
         <li> Added handling for Keil MDK-ARM&apos;s device naming scheme for multi-core devices. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Cortex-M: DFSR was cleared by accident (due to an indirect call of JLINK_GetMOEs), as soon as CPU was halted. Fixed. </li>
       </ol>
@@ -9983,7 +10478,7 @@ div.divider-global:nth-of-type(even) {
         <li> JLINKARM_GetDebugInfo() did not work correctly for Cortex-A/R based targets. Fixed. </li>
         <li> Added new defines for JLINKARM_GetDebugInfo(): JLINKARM_DEBUG_INFO_APBAP_INDEX, JLINKARM_DEBUG_INFO_AHBAP_INDEX </li>
       </ol>
-      <h3>STM32 unlock utility</h3>
+      <h3>STM32 Utility</h3>
       <ol>
         <li> Added support for STM32 F74xx / 75xx devices. </li>
         <li> SPRMOD was not cleared if set on STM32 42xx / 43xx devices. Fixed. </li>
@@ -10239,7 +10734,7 @@ div.divider-global:nth-of-type(even) {
         <li> Device name passed to DLL was not recognized if it contained trailing spaces. Fixed. </li>
         <li> Disassemble function of J-Link DLL did not handle MOV Rx, &lt;const&gt; for Cortex-A/R cores correctly. Fixed. </li>
         <li> Flash programming for Infineon XMC4700 and XMC4800 devices did not work properly due to incorrect sectorization in DLL. Fixed. </li>
-        <li> Flash sectorization of NXP LPC54xx devices was incorrect which could lead to problems when downloading to flash via GDBServer and other IDEs. Fixed. </li>
+        <li> Flash sectorization of NXP LPC54xx devices was incorrect which could lead to problems when downloading to flash via GDB Server and other IDEs. Fixed. </li>
         <li> Freescale Vybrid: SPIFI flash programming did not work correctly, if boot ROM was executed after debug reset. Fixed. </li>
         <li> From now on, a device or at least a core must be specified when connecting to a target. </li>
         <li> Infineon XMC4200 series: Auto searching for SEGGER RTT block did not work properly. Fixed. </li>
@@ -10328,7 +10823,7 @@ div.divider-global:nth-of-type(even) {
         <li> Added support for Analog Devices ADUCM362. </li>
         <li> Added support for Renesas RX23T series devices. </li>
         <li> Flash programming for Infineon XMC4700 and XMC4800 devices did not work properly due to incorrect sectorization in J-Flash. Fixed. </li>
-        <li> Flash sectorization of NXP LPC54xx devices was incorrect which could lead to problems when downloading to flash via GDBServer and other IDEs. Fixed. </li>
+        <li> Flash sectorization of NXP LPC54xx devices was incorrect which could lead to problems when downloading to flash via GDB Server and other IDEs. Fixed. </li>
         <li> Added sample project for Freescale MKL17Z64xxx4 (MKL17Z64xxx4.jflash) devices. </li>
         <li> Added flash programming support for ST STCOMET series devices (Cortex-M4). </li>
         <li> Added flash programming support for Cypress CY8C4245xxx-Dxxx and CY8C4246xxx-Dxxx series devices. </li>
@@ -10570,7 +11065,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Flash programming during debug session with e2 studio did not work properly for Renesas R7FS7G2 and R7FS3A7 devices. Fixed. </li>
         <li> Flash programming for Infineon XMC4700 and XMC4800 devices did not work properly due to incorrect sectorization in DLL. Fixed. </li>
-        <li> Flash sectorization of NXP LPC54xx devices was incorrect which could lead to problems when downloading to flash via GDBServer and other IDEs. Fixed. </li>
+        <li> Flash sectorization of NXP LPC54xx devices was incorrect which could lead to problems when downloading to flash via GDB Server and other IDEs. Fixed. </li>
         <li> Some LPC11A series devices were not listed correctly. Fixed. </li>
         <li> Some TLE98xx series devices were not listed correctly. Fixed. </li>
         <li> Automatic JTAG speed detection did not work properly on ARM7/9 devices with adaptive clocking support and newer J-Link V10 models. Fixed. </li>
@@ -10599,7 +11094,7 @@ div.divider-global:nth-of-type(even) {
       <h3>J-Flash</h3>
       <ol>
         <li> Flash programming for Infineon XMC4700 and XMC4800 devices did not work properly due to incorrect sectorization in J-Flash. Fixed. </li>
-        <li> Flash sectorization of NXP LPC54xx devices was incorrect which could lead to problems when downloading to flash via GDBServer and other IDEs. Fixed. </li>
+        <li> Flash sectorization of NXP LPC54xx devices was incorrect which could lead to problems when downloading to flash via GDB Server and other IDEs. Fixed. </li>
         <li> RAM size for Analog Devices ADucM330 was not set correctly. Fixed. </li>
         <li> Some LPC11A series devices were not listed correctly. Fixed. </li>
         <li> Added flash programming support for Infineon TLE9861, TLE9867, TLE9869, TLE9871, TLE9877 and TLE9879 series devices (Cortex-M3). </li>
@@ -10788,9 +11283,9 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> J-Link V10: Under special circumstances firmware could hang if multiple of 512 bytes were sent in one USB packet. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
-        <li> Link to GDBServer manual in help menu did not work. Fixed. </li>
+        <li> Link to GDB Server manual in help menu did not work. Fixed. </li>
       </ol>
       <h3>Installer</h3>
       <ol>
@@ -11061,7 +11556,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> J-Link-OB-STM32F072: Handling of main LED was incorrect (Under special circumstances enable / disable LED was interchanged). Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> CPU was not automatically restarted after non-semihosting SVC calls. Fixed. </li>
       </ol>
@@ -11332,15 +11827,12 @@ div.divider-global:nth-of-type(even) {
       </ol>
       <h3>STM32 Utility</h3>
       <ol>
+        <li> Added a build of the STM32 Utility to the J-Link software package for Linux and MAC. </li>
+        <li> Added command line options  (e.g. -SetDeviceFamily, -exit, etc...). </li>
+        <li> Reduced minimum target voltage from 2V to 0.5V. </li>
         <li> Added support to unlock locked ST STM32F0 series devices. </li>
         <li> Added the STM32 Utility to the Linux and MAC package. </li>
         <li> Under special circumstances, &quot;press any key to exit&quot; did not work. Fixed. </li>
-      </ol>
-      <h3>STM32 unlock utility</h3>
-      <ol>
-        <li> Added a build of the STM32 Unlock Utility to the J-Link software package for Linux and MAC. </li>
-        <li> Added command line options  (e.g. -SetDeviceFamily, -exit, etc...). </li>
-        <li> Reduced minimum target voltage from 2V to 0.5V. </li>
       </ol>
     </div>
   </div>
@@ -11419,7 +11911,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Added watchdog handling to the Atmel SAMD series flash algorithm. </li>
       </ol>
-      <h3>RTTClient</h3>
+      <h3>RTT Client</h3>
       <ol>
         <li> If a string ended with \r\n (very unusual), an access violation could occur. Fixed. </li>
       </ol>
@@ -11629,7 +12121,7 @@ div.divider-global:nth-of-type(even) {
         <li> GLOBAL.H included &lt;memory.h&gt; by accident, to access memset() etc. Has been replaced by including &lt;string.h&gt; which is a standard C-library header. </li>
         <li> User Guide updated. (Added functions to specify an IDCODE that is used when connecting to a device that is locked via an IDCODE) </li>
       </ol>
-      <h3>STM32 unlock utility</h3>
+      <h3>STM32 Utility</h3>
       <ol>
         <li> Changed the generic behavior of the STM32 Utility, so that the device series have to be selected as the auto detection does not work reliable for all ST devices. </li>
       </ol>
@@ -11758,7 +12250,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> SiLabs 8051: Under special circumstances, breakpoint registers were not written correctly, so breakpoints did not work as expected. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> More specific exit codes added (for proper error detection / handling) </li>
       </ol>
@@ -12450,13 +12942,10 @@ div.divider-global:nth-of-type(even) {
       </ol>
       <h3>GDB Server</h3>
       <ol>
-        <li> &quot;jump&quot; command in GDB was not working correctly, since GDBServer overstepped breakpoint automatically on &quot;continue&quot; command. Fixed. </li>
+        <li> &quot;jump&quot; command in GDB was not working correctly, since GDB Server overstepped breakpoint automatically on &quot;continue&quot; command. Fixed. </li>
+        <li> When selecting a CirrusLogic EP93xx device and not configuring a RAM area for FPU register access, the error message &quot;Error: RAM needed for writing FPU registers. No RAM area configured.&quot; showed up, even in case FPU registers were not accessed. Fixed. </li>
         <li> Added GDB replies to simulate thread support. </li>
         <li> Command line options -nohalt added to prevent stopping target on connect. Counter-part: -halt. </li>
-      </ol>
-      <h3>GDBServer</h3>
-      <ol>
-        <li> When selecting a CirrusLogic EP93xx device and not configuring a RAM area for FPU register access, the error message &quot;Error: RAM needed for writing FPU registers. No RAM area configured.&quot; showed up, even in case FPU registers were not accessed. Fixed. </li>
       </ol>
       <h3>J-Flash</h3>
       <ol>
@@ -12499,14 +12988,14 @@ div.divider-global:nth-of-type(even) {
         <li> JLINK_EraseChip(): If used with Atmel AT91SAM7 series CPUs, erase was not performed properly but skipped. Fixed. </li>
         <li> Under special circumstances, JLINK_EraseChip() function returned an error (return value &lt; 0), even if no error happened. Fixed. </li>
       </ol>
+      <h3>STM32 Utility</h3>
+      <ol>
+        <li> Added command line option &quot;-speed &lt;SpeedkHz&gt;&quot; for configuring target interface speed to be used by J-Link. </li>
+      </ol>
       <h3>STM32 unlock tool</h3>
       <ol>
         <li> STM32F42xx/43xx series devices: Not all option bytes were reset correctly. Fixed. </li>
         <li> STM32L1xx series devices were not auto-detected correctly. Fixed. </li>
-      </ol>
-      <h3>STM32 unlock utility</h3>
-      <ol>
-        <li> Added command line option &quot;-speed &lt;SpeedkHz&gt;&quot; for configuring target interface speed to be used by J-Link. </li>
       </ol>
       <h3>SWO Viewer</h3>
       <ol>
@@ -12632,7 +13121,7 @@ div.divider-global:nth-of-type(even) {
       </ol>
       <h3>GDB Server</h3>
       <ol>
-        <li> &quot;jump&quot; command in GDB was not working correctly, since GDBServer overstepped breakpoint automatically on &quot;continue&quot; command. Fixed. </li>
+        <li> &quot;jump&quot; command in GDB was not working correctly, since GDB Server overstepped breakpoint automatically on &quot;continue&quot; command. Fixed. </li>
       </ol>
       <h3>J-Flash</h3>
       <ol>
@@ -12801,9 +13290,9 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Display target voltage in log on initial connection. </li>
         <li> Command line option &apos;-notimeout&apos; added to allow powering up a device after starting GDB Server. </li>
-        <li> Under special circumstances unhandled exception could occur when closing GDBServer while target CPU was running. Fixed. </li>
+        <li> Under special circumstances unhandled exception could occur when closing GDB Server while target CPU was running. Fixed. </li>
         <li> Added log output to startup. </li>
-        <li> Starting multiple GDBServer instances from different users via SSH did not work properly. Fixed. </li>
+        <li> Starting multiple GDB Server instances from different users via SSH did not work properly. Fixed. </li>
       </ol>
       <h3>GDB Server CL</h3>
       <ol>
@@ -12914,8 +13403,8 @@ div.divider-global:nth-of-type(even) {
       </ol>
       <h3>GDB Server</h3>
       <ol>
-        <li> Under special circumstances unhandled exception could occur when closing GDBServer while target CPU was running. Fixed. </li>
-        <li> Starting multiple GDBServer instances from different users via SSH did not work properly. Fixed. </li>
+        <li> Under special circumstances unhandled exception could occur when closing GDB Server while target CPU was running. Fixed. </li>
+        <li> Starting multiple GDB Server instances from different users via SSH did not work properly. Fixed. </li>
       </ol>
       <h3>J-Flash</h3>
       <ol>
@@ -13132,11 +13621,8 @@ div.divider-global:nth-of-type(even) {
       </ol>
       <h3>GDB Server</h3>
       <ol>
-        <li> Under special circumstances, when having more than 1 GDB connection open to GDB Server gdb commands got intermixed. Fixed. </li>
-      </ol>
-      <h3>GDBServer</h3>
-      <ol>
         <li> Mac: Under special circumstances, a seg fault 11 could occur if a GDB-TCP/IP connection was closed. Fixed. </li>
+        <li> Under special circumstances, when having more than 1 GDB connection open to GDB Server gdb commands got intermixed. Fixed. </li>
         <li> Semihosting: SYS_FLEN command did not work properly. Fixed. </li>
         <li> Semihosting: SYS_FCLOSE command did not work properly. Fixed. (Usually did not cause any real problems) </li>
         <li> Added command line option -SettingsFile. </li>
@@ -13182,7 +13668,7 @@ div.divider-global:nth-of-type(even) {
       </ol>
       <h3>UM08001</h3>
       <ol>
-        <li> J-Link manual: Serveral corrections in GDBServer section. </li>
+        <li> J-Link manual: Serveral corrections in GDB Server section. </li>
       </ol>
     </div>
   </div>
@@ -13213,7 +13699,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> J-Link-OB-XMC4200: VCOM functionality did not work correctly when receiving data from target system. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> DLL flash programming logic: When downloading large applications on STM32 devices to flash, via address 0x0, it could happen that flash programming failed if application size exceeded a specific value. Fixed. </li>
       </ol>
@@ -13243,7 +13729,7 @@ div.divider-global:nth-of-type(even) {
         <li> J-Link ULTRA V1, J-Link PRO V1: Under special circumstances, single stepping on Cortex-A/R devices did not work properly if D-cache was enabled. Fixed. </li>
         <li> Flasher Portable: Stand-alone programming of RX6xx devices via JTAG did not work properly. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Semihosting: SYS_FLEN command did not work properly. Fixed. </li>
         <li> Semihosting: SYS_FCLOSE command did not work properly. Fixed. (Usually did not cause any real problems) </li>
@@ -13279,11 +13765,8 @@ div.divider-global:nth-of-type(even) {
       </ol>
       <h3>GDB Server</h3>
       <ol>
-        <li> Under special circumstances, when having more than 1 GDB connection open to GDB Server gdb commands got intermixed. Fixed. </li>
-      </ol>
-      <h3>GDBServer</h3>
-      <ol>
         <li> Mac: Under special circumstances, a seg fault 11 could occur if a GDB-TCP/IP connection was closed. Fixed. </li>
+        <li> Under special circumstances, when having more than 1 GDB connection open to GDB Server gdb commands got intermixed. Fixed. </li>
       </ol>
       <h3>J-Flash</h3>
       <ol>
@@ -13338,10 +13821,10 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Flasher: Incorrect CFI information reported by some SST39 CFI NOR flash devices was not handled correctly in stand-alone mode. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Linux/Mac: Under special circumstances segmentation fault could occur when closing the GDB IP connection. Fixed. </li>
-        <li> Under special circumstances, when having more than 1 GDB connection open to GDBServer (for example to allow live memory updates of variables), a stop reply packet was sent by GDBServer even on the connection which did not start the target. Fixed. </li>
+        <li> Under special circumstances, when having more than 1 GDB connection open to GDB Server (for example to allow live memory updates of variables), a stop reply packet was sent by GDB Server even on the connection which did not start the target. Fixed. </li>
       </ol>
       <h3>SDK</h3>
       <ol>
@@ -13366,7 +13849,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> J-Link V9 / Flasher ARM V4: Under special circumstances, when using an ARM7/9 device &amp; auto-speed target interface speed detection, J-Link selected adaptive clocking even if RTCK was not connected. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Mac/Linux 64-bit: Under special circumstances, a segmentation fault was caused. Fixed. </li>
       </ol>
@@ -13543,9 +14026,9 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Under special circumstances, CFI flash programming did not work properly. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
-        <li> Under special circumstances, certain printf outputs on semihosting where not handled correctly by GDBServer and string was &quot;swallowed&quot;. Fixed. </li>
+        <li> Under special circumstances, certain printf outputs on semihosting where not handled correctly by GDB Server and string was &quot;swallowed&quot;. Fixed. </li>
       </ol>
     </div>
   </div>
@@ -13707,7 +14190,7 @@ div.divider-global:nth-of-type(even) {
         <li> J-Link PRO/ULTRA V4: Under special circumstances, when running SWO multiple hours some characters could be lost. Fixed. </li>
         <li> Under special circumstances, when reading from illegal addresses on Cortex-M devices, J-Link did not report an error but incorrect data. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> SWO &amp; semihosting printf data output via telnet channel on port 2333 added. </li>
       </ol>
@@ -13827,7 +14310,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> J-Link V9 Max. SWD speed supported by J-Link improved. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Semihosting output for ARM7/9 and Cortex-M via connection on port 2333 added. </li>
       </ol>
@@ -14116,10 +14599,10 @@ div.divider-global:nth-of-type(even) {
         <li> ARM: Flash programming did not work properly for STM32F05x devices. Fixed. </li>
         <li> PPC: Added support for ST SPC560B54, SPC560B60, SPC560B64 </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Implemented alternative register set with FPU registers for Cortex-M4. </li>
-        <li> When Cortex-A9 was connected. GDBServer showed &quot;Cortex-A8 was found&quot;. Fixed. </li>
+        <li> When Cortex-A9 was connected. GDB Server showed &quot;Cortex-A8 was found&quot;. Fixed. </li>
       </ol>
       <h3>J-Flash</h3>
       <ol>
@@ -14141,11 +14624,11 @@ div.divider-global:nth-of-type(even) {
   <div class="container">
     <h2>Version V4.58a (2012-12-05)</h2>
     <div>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Command line options -port and -SWOPort did not work properly. Fixed. </li>
-        <li> If &quot;Cancel&quot; is selected in the configuration dialog, now dialog settings are not taken into consideration instead of closing the complete GDBServer </li>
-        <li> If connection to J-Link failed, under special circumstances, GDBServer could end up in an endless loop, periodically trying to connect to J-Link again. Fixed. </li>
+        <li> If &quot;Cancel&quot; is selected in the configuration dialog, now dialog settings are not taken into consideration instead of closing the complete GDB Server </li>
+        <li> If connection to J-Link failed, under special circumstances, GDB Server could end up in an endless loop, periodically trying to connect to J-Link again. Fixed. </li>
       </ol>
     </div>
   </div>
@@ -14179,7 +14662,7 @@ div.divider-global:nth-of-type(even) {
         <li> PPC: Added support for Freescale MPC5605B/606B/607B </li>
         <li> ARM/RX/PPC: Core ID mask which has been configured in J-Flash was not used correctly in stand-alone mode, which could cause problems in stand-alone mode on some MCUs. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Added startup configuration dialog for GUI version </li>
       </ol>
@@ -14385,7 +14868,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> J-Link Lite XMC4500: Under special circumstances, SWO did not work properly . Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Typo in register list for Cortex-M: BASEPRI was printed as &quot;BASPRI&quot;. Fixed. </li>
         <li> &apos;k&apos; packet was not handled correctly. Fixed. </li>
@@ -14439,7 +14922,7 @@ div.divider-global:nth-of-type(even) {
         <li> Under spceial circumstances, CFI flash programming did not work properly for Cortex-M4 devices. Fixed. </li>
         <li> When setting / clearing hardware breakpoints on Cortex-M targets CPU was always halted temporarily, even if not necessary. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Added command line option -jtagconf which is fully compatible to the jtagconf monitor command. </li>
       </ol>
@@ -14528,7 +15011,7 @@ div.divider-global:nth-of-type(even) {
         <li> J-Link Lite / Lite Cortex-M: JTAG signal quality improved. </li>
         <li> J-Link: For J-Links with CDC support, under special circumstances it could happen that single characters transmitted from the host PC to the J-Link got lost. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Extended GDB register set for Cortex-M. Added: MSP, PSP, PRIMASK, BASEPRI, FAULTMASK, CONTROL </li>
         <li> Command line option &quot;-select&quot; updated. See manual for more detailed description. </li>
@@ -14623,9 +15106,9 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Under special circumstances, SWO did not work properly on older J-Link hardware versions (V6, V7). Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
-        <li> For some GDBs it could happen that GDB requested non-existing registers causing &quot;Unsupported register...&quot; messages in the GDBServer. Fixed. </li>
+        <li> For some GDBs it could happen that GDB requested non-existing registers causing &quot;Unsupported register...&quot; messages in the GDB Server. Fixed. </li>
       </ol>
     </div>
   </div>
@@ -14652,7 +15135,7 @@ div.divider-global:nth-of-type(even) {
         <li> Flasher ARM V3: When programming Cortex-A/R devices in J-Link mode, the &quot;emulator does not have intelligence for the selected CPU core...&quot; dialog popped up. Changed/Fixed. </li>
         <li> Improved stability of J-Link for cases where the SWD interface does not run stable (much noise on SWD lines). </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> For some GDBs the error &quot;remote &apos;g&apos; packet reply is too long&quot; appeared. Fixed. </li>
       </ol>
@@ -14732,7 +15215,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Flash programming for AyDeeKay KamCho devices did not work properly. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> For some GDBs, under special circumstances, debugging on Cortex-M targets could make problems. Fixed. </li>
       </ol>
@@ -14802,9 +15285,9 @@ div.divider-global:nth-of-type(even) {
   <div class="container">
     <h2>Version V4.46d (2012-04-24)</h2>
     <div>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
-        <li> Under special circumstances, GDBServer could crash when GDB reads a single register </li>
+        <li> Under special circumstances, GDB Server could crash when GDB reads a single register </li>
       </ol>
       <h3>RDI</h3>
       <ol>
@@ -14853,7 +15336,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Under special circumstances, flashing of AyDeeKay uSobek devices could fail with &quot;RAM check failed&quot;   </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Under special circumstances &quot;C/C++ Application&quot; debug configuration in Eclipse Indigo did not work properly. Fixed. </li>
       </ol>
@@ -15034,7 +15517,7 @@ div.divider-global:nth-of-type(even) {
         <li> Flash programming support for Freescale Kinetis K70 did not work correctly. Fixed. </li>
         <li> Some Freescale devices which are already supported, were not selectable. Fixed. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Target interface voltages below 1.6V where not handled correctly. Fixed. </li>
       </ol>
@@ -15232,7 +15715,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Added: Freescale K10DN32V, K10DN64V, K10DN128V, K10DX32V, K10DX64V, K10DX128V, K20DN32V, K20DX32V, K20DN64V, K20DX64V, K20DN128V, K20DX128V </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Specifying a device name caused an API error. </li>
       </ol>
@@ -15346,7 +15829,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Freescale Kinetis: Debugger can get stuck when accessing certain illegal addresses. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> Cortex-A/R: Registers were not handled correctly. This caused problems when single stepping / restarting / halting the CPU. </li>
       </ol>
@@ -15424,7 +15907,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> All updated. </li>
       </ol>
-      <h3>GDBServer</h3>
+      <h3>GDB Server</h3>
       <ol>
         <li> &quot;monitor flash CFI = &lt;SAddr&gt;-&lt;EAddr&gt;&quot; and &quot;monitor WorkRAM = &lt;SAddr&gt;-&lt;EAddr&gt;&quot; did not accept &quot;=&quot; in command. </li>
         <li> &quot;monitor reset &lt;Type&gt;&quot; reported wrong reset description for Cortex-M devices </li>
@@ -15512,7 +15995,7 @@ div.divider-global:nth-of-type(even) {
       <ol>
         <li> Support for big endian added </li>
       </ol>
-      <h3>RXDLL Updater</h3>
+      <h3>RX DLL Updater</h3>
       <ol>
         <li> All compilers are selected to be updated, by default. </li>
       </ol>
@@ -16465,7 +16948,7 @@ div.divider-global:nth-of-type(even) {
 <div class="footer">
   <div class="container">
     <div>
-      <p>Copyright 2001-2020 SEGGER Microcontroller GmbH All rights reserved.<br>
+      <p>Copyright 2001-2021 SEGGER Microcontroller GmbH All rights reserved.<br>
         For more information, please visit our website&nbsp;<a href="https://www.segger.com/" target="_blank">www.segger.com</a>&nbsp;or contact us at&nbsp;<a href="mailto:info@segger.com">info@segger.com</a>&nbsp;</p>
     </div>
   </div>

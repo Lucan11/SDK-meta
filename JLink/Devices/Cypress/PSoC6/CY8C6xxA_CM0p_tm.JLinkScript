@@ -439,7 +439,7 @@ int _PSoC6_Reset(U8 doXRES) {
   int status;
   
   if (doXRES != 0) {
-    _HardReset();
+    status = _HardReset();
   } else {
     // Handshake: wait for debug interface becomes enabled after device reset
     status = _Handshake();

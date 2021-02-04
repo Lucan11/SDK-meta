@@ -909,14 +909,6 @@
     <FlashBankInfo Name="SMIF"               BaseAddr="0x18000000" MaxSize="0x08000000" Loader="Devices/Cypress/PSoC6/CY8C6xxA_SMIF.FLM" LoaderType="FLASH_ALGO_TYPE_CMSIS" />
     <!-- <FlashBankInfo Name="EFUSE"              BaseAddr="0x90700000" MaxSize="0x00000400" Loader="Devices/Cypress/PSoC6/CY8C6xxA_EFUSE.FLM" LoaderType="FLASH_ALGO_TYPE_CMSIS" /> -->
   </Device>
-  <!--                  -->
-  <!-- ON Semiconductor -->
-  <!--                  -->
-  <Device>
-    <ChipInfo Vendor="ON Semiconductor" Name="RSL10" Core="JLINK_CORE_CORTEX_M3_R2P1" WorkRAMAddr="0x20000000" WorkRAMSize="0x6000" JLinkScriptFile="Devices/ONSemiconductor/RSL10/ONSemiconductor_RSL10.JLinkScript"/>
-    <FlashBankInfo Name="Main Flash" BaseAddr="0x00100000" MaxSize="0x60000" Loader="Devices/ONSemiconductor/RSL10/ONSemiconductor_RSL10_Main_Flash.elf" LoaderType="FLASH_ALGO_TYPE_OPEN" AlwaysPresent="1"/>
-    <FlashBankInfo Name="NVR Flash"  BaseAddr="0x00080000" MaxSize="0x1800"  Loader="Devices/ONSemiconductor/RSL10/ONSemiconductor_RSL10_NVR_Flash.elf"  LoaderType="FLASH_ALGO_TYPE_OPEN" />
-  </Device>
   <!--    -->
   <!-- ST -->
   <!--    -->
